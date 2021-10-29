@@ -1,1 +1,1 @@
-# Index: [click me](https://kah3vich.github.io/medina/public/index.html)
+# Index: [click me](https://kah3vich.github.io/Medina/public/index.html)
