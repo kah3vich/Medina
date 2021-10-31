@@ -109,6 +109,19 @@ $('#indexCatalogPrev').on('click', function() {
     changeSlide('prev')
 })
 
+$('#indexCatalogButton-1').on('click', function() {
+    changeSlide(0)
+})
+$('#indexCatalogButton-2').on('click', function() {
+    changeSlide(1)
+})
+$('#indexCatalogButton-3').on('click', function() {
+    changeSlide(2)
+})
+$('#indexCatalogButton-4').on('click', function() {
+    changeSlide(3)
+})
+
 function changeSlide(id) { 
     if(id === 'next') {
         activeContentIndex++
@@ -123,6 +136,87 @@ function changeSlide(id) {
     }
     console.log(activeContentIndex)
     if(activeContentIndex == 0) {
-
+        $('#indexCatalogButton-1').addClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogButton-2').removeClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogButton-3').removeClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogButton-4').removeClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogBlock-1').removeClass('display-n')
+        $('#indexCatalogBlock-2').addClass('display-n')
+        $('#indexCatalogBlock-3').addClass('display-n')
+        $('#indexCatalogBlock-4').addClass('display-n')
+    }
+    if(activeContentIndex == 1) {
+        $('#indexCatalogButton-2').addClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogButton-1').removeClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogButton-3').removeClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogButton-4').removeClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogBlock-2').removeClass('display-n')
+        $('#indexCatalogBlock-1').addClass('display-n')
+        $('#indexCatalogBlock-3').addClass('display-n')
+        $('#indexCatalogBlock-4').addClass('display-n')
+    }
+    if(activeContentIndex == 2) {
+        $('#indexCatalogButton-3').addClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogButton-2').removeClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogButton-1').removeClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogButton-4').removeClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogBlock-3').removeClass('display-n')
+        $('#indexCatalogBlock-2').addClass('display-n')
+        $('#indexCatalogBlock-1').addClass('display-n')
+        $('#indexCatalogBlock-4').addClass('display-n')
+    }
+    if(activeContentIndex == 3) {
+        $('#indexCatalogButton-4').addClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogButton-3').removeClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogButton-2').removeClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogButton-1').removeClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogBlock-4').removeClass('display-n')
+        $('#indexCatalogBlock-3').addClass('display-n')
+        $('#indexCatalogBlock-2').addClass('display-n')
+        $('#indexCatalogBlock-1').addClass('display-n')
+    }
+    if(id == 0) {
+        activeContentIndex = 0
+        $('#indexCatalogButton-1').addClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogButton-2').removeClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogButton-3').removeClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogButton-4').removeClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogBlock-1').removeClass('display-n')
+        $('#indexCatalogBlock-2').addClass('display-n')
+        $('#indexCatalogBlock-3').addClass('display-n')
+        $('#indexCatalogBlock-4').addClass('display-n')
+    }
+    if(id == 1) {
+        activeContentIndex = 1
+        $('#indexCatalogButton-2').addClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogButton-1').removeClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogButton-3').removeClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogButton-4').removeClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogBlock-2').removeClass('display-n')
+        $('#indexCatalogBlock-1').addClass('display-n')
+        $('#indexCatalogBlock-3').addClass('display-n')
+        $('#indexCatalogBlock-4').addClass('display-n')
+    }
+    if(id == 2) {
+        activeContentIndex = 2
+        $('#indexCatalogButton-3').addClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogButton-2').removeClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogButton-1').removeClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogButton-4').removeClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogBlock-3').removeClass('display-n')
+        $('#indexCatalogBlock-2').addClass('display-n')
+        $('#indexCatalogBlock-1').addClass('display-n')
+        $('#indexCatalogBlock-4').addClass('display-n')
+    }
+    if(id == 3) {
+        activeContentIndex = 3
+        $('#indexCatalogButton-4').addClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogButton-3').removeClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogButton-2').removeClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogButton-1').removeClass('ind-catalog__content-count-item-active')
+        $('#indexCatalogBlock-4').removeClass('display-n')
+        $('#indexCatalogBlock-3').addClass('display-n')
+        $('#indexCatalogBlock-2').addClass('display-n')
+        $('#indexCatalogBlock-1').addClass('display-n')
     }
 }
