@@ -134,7 +134,6 @@ function changeSlide(id) {
             activeContentIndex = elementContentCount - 1
         }
     }
-    console.log(activeContentIndex)
     if(activeContentIndex == 0) {
         $('#indexCatalogButton-1').addClass('ind-catalog__content-count-item-active')
         $('#indexCatalogButton-2').removeClass('ind-catalog__content-count-item-active')

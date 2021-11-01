@@ -904,6 +904,70 @@
           align-items: center;
 }
 
+.ind-catalog__content-item:nth-child(1) .ind-catalog__content-item-img-button {
+  background: #233f80;
+}
+
+.ind-catalog__content-item:nth-child(1) .ind-catalog__content-item-img-star {
+  background: #233f80;
+}
+
+.ind-catalog__content-item:nth-child(2) .ind-catalog__content-item-img-button {
+  background: #ea3b32;
+}
+
+.ind-catalog__content-item:nth-child(2) .ind-catalog__content-item-img-star {
+  background: #3287ea;
+}
+
+.ind-catalog__content-item:nth-child(3) .ind-catalog__content-item-img-button {
+  background: #d1b980;
+}
+
+.ind-catalog__content-item:nth-child(3) .ind-catalog__content-item-img-star {
+  background: #d1b980;
+}
+
+.ind-catalog__content-item:nth-child(4) .ind-catalog__content-item-img-button {
+  background: #ea9532;
+}
+
+.ind-catalog__content-item:nth-child(4) .ind-catalog__content-item-img-star {
+  background: #ea9532;
+}
+
+.ind-catalog__content-item:nth-child(5) .ind-catalog__content-item-img-button {
+  background: #d1b980;
+}
+
+.ind-catalog__content-item:nth-child(5) .ind-catalog__content-item-img-star {
+  background: #d1b980;
+}
+
+.ind-catalog__content-item:nth-child(6) .ind-catalog__content-item-img-button {
+  background: #ea9532;
+}
+
+.ind-catalog__content-item:nth-child(6) .ind-catalog__content-item-img-star {
+  background: #ea9532;
+}
+
+.ind-catalog__content-item:nth-child(7) .ind-catalog__content-item-img-button {
+  background: #233f80;
+}
+
+.ind-catalog__content-item:nth-child(7) .ind-catalog__content-item-img-star {
+  background: #233f80;
+}
+
+.ind-catalog__content-item:nth-child(8) .ind-catalog__content-item-img-button {
+  background: #ea3b32;
+}
+
+.ind-catalog__content-item:nth-child(8) .ind-catalog__content-item-img-star {
+  background: #3287ea;
+}
+
 .ind-catalog__content-item:hover .ind-catalog__content-item-btn {
   -webkit-transition: all .5s ease;
   -o-transition: all .5s ease;
@@ -1234,7 +1298,7 @@
   width: 100%;
   text-align: center;
   background: transparent;
-  margin: 98px 0 0 0;
+  margin: 80px 0 0 0;
   cursor: pointer;
   font-family: TT Norms;
   font-style: normal;
