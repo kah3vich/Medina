@@ -1,11 +1,11 @@
 var indexAddSlider = new Swiper(".indexAddSlider", {
     navigation: {
-        nextEl: ".ind-add__slider .swiper-controls .swiper-button-next",
-        prevEl: ".ind-add__slider .swiper-controls .swiper-button-prev",
+        nextEl: ".ind-rec__slider .swiper-controls .swiper-button-next",
+        prevEl: ".ind-rec__slider .swiper-controls .swiper-button-prev",
     },
     mousewheel: true,
-    slidesPerView: 5,
-    spaceBetween: 40,
+    slidesPerView: 1,
+    spaceBetween: 0,
 });
 var indexShopSlider = new Swiper(".indexShopSlider", {
     navigation: {
@@ -15,7 +15,6 @@ var indexShopSlider = new Swiper(".indexShopSlider", {
     pagination: {
         el: ".ind-shop__block-slider .swiper-controls .swiper-pagination",
     },
-    mousewheel: true,
     slidesPerView: 5,
     spaceBetween: 40,
 });
@@ -27,7 +26,6 @@ var indexHeaderSlider = new Swiper(".indexHeaderSlider", {
     pagination: {
         el: ".ind-header__content .swiper-controls .swiper-pagination",
     },
-    mousewheel: true,
     effect: "fade",
     fadeEffect: { 
         crossFade: true 
@@ -219,3 +217,34 @@ function changeSlide(id) {
         $('#indexCatalogBlock-1').addClass('display-n')
     }
 }
+
+
+
+$(function() {
+    $('#city').css('display', 'none')
+    $('#city').after('<div class="header-select-item"><div class="header-select-placeholder"><svg width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect y="-1" width="28" height="17" fill="url(#pattern0)"/><defs><pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1"><use xlink:href="#image0_264_578" transform="translate(0 -0.0501176) scale(0.004 0.00658824)"/></pattern><image id="image0_264_578" width="250" height="167" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAACnBAMAAADK0lwnAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAD1BMVEX///+qveEAOaaOMEvVKx7/j+iDAAAAAWJLR0QAiAUdSAAAAAd0SU1FB+UCBQU6IahIjw8AAABeSURBVHja7c0BCQAgEASwq2AFK1jB/plM8RzIVmAJAAAAAAAAfG01ZTfZ7Xa73W632+12u91ut9vtdrvdbrfb7eP7acptstvtdrvdbrfb7Xa73W632+12u91ut9unPdMX1Q14hi66AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIxLTAyLTA1VDA1OjU4OjMzKzAwOjAw1ZGbDgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMS0wMi0wNVQwNTo1ODozMyswMDowMKTMI7IAAAAASUVORK5CYII="/></defs></svg></div><div id="listConstructorElementHeader" class="header-select-wrapper display-n"></div></div>')
+    let count = $('#city').children('option').length
+    for( let i = 0; i < count; i++) {
+        let arrows = $('#city').children('option').eq(i).val()
+        let newElementBlock = document.createElement("button");
+        newElementBlock.classList.add("header-select-element")
+        newElementBlock.id = `header-select-element-${i}`;
+        newElementBlock.innerHTML = `${arrows}`
+        document.getElementById("listConstructorElementHeader").appendChild(newElementBlock);
+        $(`#header-select-element-${i}`).attr('value', `${arrows}`)
+        $(`#header-select-element-${i}`).attr('type', `button`)
+    }
+    $('#header-select-element-0').css('display', 'none')
+    $('.header-select-item').on('click', function() {
+        $('.header-select-wrapper').toggleClass('display-n')
+        $('.header-select-item').toggleClass('header-select-item-active')
+    })
+    $(".header-select-element").on('click', function() {
+        let idElement = this.id
+        let valueElement = $(`#${idElement}`).val()
+        $('.header-select-placeholder').html(valueElement)
+        $('#city option:nth-child(1)').val(valueElement)
+        $('#city option:nth-child(1)').html(valueElement)
+    })
+})
+
