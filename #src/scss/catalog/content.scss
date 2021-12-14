@@ -1,0 +1,372 @@
+.catalog-content {
+    padding: 110px 0 90px 0;
+    width: 100%;
+    &__block {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        &-filter {
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            &-title {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 30px;
+                line-height: 35px;
+                color: #000000;
+            }
+            &-titles {
+                width: 100%;
+                margin: 55px 0 0 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                cursor: pointer;
+                & p {
+                    font-family: TT Norms;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 22px;
+                    line-height: 26px;
+                    color: #000000;
+                }
+                & svg {
+                    transition: all 0.5s ease;
+                }
+            }
+            &-add {
+                cursor: pointer;
+                margin: 30px 0 0 66px;
+                & p {
+                    font-family: TT Norms;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #D65E54;
+                }
+            }
+            &-btn {
+                margin: 65px 0 0 0;
+                width: 100%;
+                height: 68px;
+                background: #D65E54;
+                box-shadow: 0px 7px 20px rgba(141, 40, 173, 0.15);
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                & p {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 27px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+        &-list {
+            width: 920px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            &-items {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                margin: 0 0 45px 0;
+                &:last-child {
+                    margin: 0;
+                }
+                &-photo {
+                    width: 176px;
+                    height: 277px;
+                    background: #F2F2F2;
+                    border-radius: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
+                    & img {
+                        width: 136px;
+                        height: 199px;
+                        object-fit: cover;
+                    }
+                }
+                &-content {
+                    width: 536px;
+                    margin: 8px 0 0 30px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    &-type {
+                        padding: 0 19px;
+                        height: 46px;
+                        background: #D1B980;
+                        border-radius: 100px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        & p {
+                            font-family: TT Norms;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #FFFFFF;
+                        }
+                    }
+                    &-title {
+                        margin: 30px 0 0 0;
+                        & p {
+                            font-family: TT Norms;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 24px;
+                            line-height: 28px;
+                            color: #000000;
+                        }
+                    }
+                    &-authors {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        margin: 30px 0 0 0;
+                        & p {
+                            font-family: TT Norms;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 21px;
+                            color: rgba(0, 0, 0, 0.6);
+                        }
+                        &-add {
+                            margin: 0 35px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            & p {
+                                font-family: TT Norms;
+                                margin: 0 0 0 5px;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 24px;
+                                color: rgba(0, 0, 0, 0.8);
+                                & span {
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                    }
+                    &-text {
+                        margin: 22px 0 0 0;
+                        & p {
+                            font-family: TT Norms;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 26px;
+                            color: rgba(0, 0, 0, 0.7);
+                        }
+                    }
+                }
+                &-price {
+                    margin: 10px 0 0 42px;
+                    display: flex;
+                    width: 135px;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    &-last {
+                        font-family: TT Norms;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 28px;
+                        line-height: 24px;
+                        color: #000000;
+                    }
+                    &-prev {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 12px 0 0 0;
+                        padding: 0 15px 0 0;
+                        width: 100%;
+                        & p {
+                            font-family: TT Norms;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 24px;
+                            text-decoration-line: line-through;
+                            color: #BBBBBB;
+                        }
+                        &-add {
+                            margin: 0 0 0 auto;
+                            padding: 0 7px;
+                            height: 24px;
+                            background: #FF7A00;
+                            border-radius: 8px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            text-align: center;
+                            font-family: TT Norms;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #FFFFFF;
+                        }
+                    }
+                    &-btn {
+                        width: 100%;
+                        height: 48.72px;
+                        background: #D65E54;
+                        box-shadow: 0px 7px 20px rgba(141, 40, 173, 0.15);
+                        border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        margin: 24px 0 0 0;
+                        & p {
+                            font-family: TT Norms;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 18px;
+                            line-height: 24px;
+                            text-align: center;
+                            color: #FFFFFF;
+                            margin: 0 0 0 13px;
+                        }
+                    }
+                }
+            }
+        }
+        &-count {
+            height: 56px;
+            margin: 100px 0 0 150px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &-item {
+                margin: 0 10px;
+                cursor: pointer;
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 30px;
+                text-align: center;
+                color: #000000;
+                opacity: 0.4;
+                &-active {
+                    opacity: 1;
+                    color: #EA3B32;
+                }
+            }
+            &-prev {
+                cursor: pointer;
+                width: 56px;
+                height: 56px;
+                border: 1px solid #EA3B32;
+                border-radius: 28px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 8px 0 0;
+            }
+            &-next {
+                cursor: pointer;
+                width: 56px;
+                height: 56px;
+                border: 1px solid #EA3B32;
+                border-radius: 28px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 0 0 8px;
+            }
+        }
+    }
+}
+
+
+
+.catalog-content__block-filter-checkbox {
+    position: relative;
+    margin: 30px 0 0 30px;
+}
+.catalog-content__block-filter-checkbox__input {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+.catalog-content__block-filter-checkbox__label {
+    padding-left: 45px;
+    cursor: pointer;
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #636363;
+}
+
+.catalog-content__block-filter-checkbox__label:before {
+    content: "";
+    display: block;
+    width: 18.1px;
+    height: 18.1px;
+
+    background-color: #fff;
+    border-radius: 3px;
+
+    position: absolute;
+    top: 3px;
+    left: 0;
+    z-index: 1;
+    background: url("../svg/catalog/check.svg") no-repeat;
+
+    transition: background .1s linear, border .1s linear;
+}
+
+.catalog-content__block-filter-checkbox__label:after {
+    content: "";
+    display: block;
+    width: 18.1px;
+    height: 18.1px;
+
+    background: url("../svg/catalog/cheked.svg") no-repeat;
+    opacity: 0;
+
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    z-index: 2;
+
+    transition: opacity .1s linear;
+}
+.catalog-content__block-filter-checkbox__input:checked + .catalog-content__block-filter-checkbox__label:after {
+    opacity: 1;
+}
+
+.catalog-content__block-filter-checkbox__input:checked + .catalog-content__block-filter-checkbox__label {
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #D65E54;
+}

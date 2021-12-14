@@ -1,20 +1,60 @@
-var indexAddSlider = new Swiper(".indexAddSlider", {
+var recSlider = new Swiper(".recSlider", {
     navigation: {
-        nextEl: ".ind-rec__slider .swiper-controls .swiper-button-next",
-        prevEl: ".ind-rec__slider .swiper-controls .swiper-button-prev",
+        nextEl: ".rec__slider .swiper-controls .swiper-button-next",
+        prevEl: ".rec__slider .swiper-controls .swiper-button-prev",
+    },
+    pagination: {
+        el: ".rec__slider .swiper-controls .swiper-pagination",
     },
     mousewheel: true,
     slidesPerView: 1,
     spaceBetween: 0,
 });
-var indexShopSlider = new Swiper(".indexShopSlider", {
+var videoSlider = new Swiper(".videoSlider", {
     navigation: {
-        nextEl: ".ind-shop__block-slider .swiper-controls .swiper-button-next",
-        prevEl: ".ind-shop__block-slider .swiper-controls .swiper-button-prev",
+        nextEl: ".video__slider .swiper-controls .swiper-button-next",
+        prevEl: ".video__slider .swiper-controls .swiper-button-prev",
     },
     pagination: {
-        el: ".ind-shop__block-slider .swiper-controls .swiper-pagination",
+        el: ".video__slider .swiper-controls .swiper-pagination",
     },
+    mousewheel: true,
+    slidesPerView: 1,
+    spaceBetween: 0,
+});
+var authorsSlider = new Swiper(".authorsSlider", {
+    navigation: {
+        nextEl: ".authors__slider .swiper-controls .swiper-button-next",
+        prevEl: ".authors__slider .swiper-controls .swiper-button-prev",
+    },
+    pagination: {
+        el: ".authors__slider .swiper-controls .swiper-pagination",
+    },
+    mousewheel: true,
+    slidesPerView: 5,
+    spaceBetween: 0,
+});
+var partSlider = new Swiper(".partSlider", {
+    navigation: {
+        nextEl: ".part__slider .swiper-controls .swiper-button-next",
+        prevEl: ".part__slider .swiper-controls .swiper-button-prev",
+    },
+    pagination: {
+        el: ".part__slider .swiper-controls .swiper-pagination",
+    },
+    mousewheel: true,
+    slidesPerView: 5,
+    spaceBetween: 0,
+});
+var indexShopSlider = new Swiper(".indexShopSlider", {
+    navigation: {
+        nextEl: ".shop__block-slider .swiper-controls .swiper-button-next",
+        prevEl: ".shop__block-slider .swiper-controls .swiper-button-prev",
+    },
+    pagination: {
+        el: ".shop__block-slider .swiper-controls .swiper-pagination",
+    },
+    mousewheel: true,
     slidesPerView: 5,
     spaceBetween: 40,
 });
@@ -34,11 +74,11 @@ var indexHeaderSlider = new Swiper(".indexHeaderSlider", {
 
 
 $('#indexShopButton-1').on('click', function() {
-    $(this).addClass('ind-shop__block-list-item-active')
-    $('#indexShopButton-2').removeClass('ind-shop__block-list-item-active')
-    $('#indexShopButton-3').removeClass('ind-shop__block-list-item-active')
-    $('#indexShopButton-4').removeClass('ind-shop__block-list-item-active')
-    $('#indexShopButton-5').removeClass('ind-shop__block-list-item-active')
+    $(this).addClass('shop__block-list-item-active')
+    $('#indexShopButton-2').removeClass('shop__block-list-item-active')
+    $('#indexShopButton-3').removeClass('shop__block-list-item-active')
+    $('#indexShopButton-4').removeClass('shop__block-list-item-active')
+    $('#indexShopButton-5').removeClass('shop__block-list-item-active')
     $('#indexShopElement-1').removeClass('display-n')
     $('#indexShopElement-2').addClass('display-n')
     $('#indexShopElement-3').addClass('display-n')
@@ -46,11 +86,11 @@ $('#indexShopButton-1').on('click', function() {
     $('#indexShopElement-5').addClass('display-n')
 });
 $('#indexShopButton-2').on('click', function() {
-    $(this).addClass('ind-shop__block-list-item-active')
-    $('#indexShopButton-1').removeClass('ind-shop__block-list-item-active')
-    $('#indexShopButton-3').removeClass('ind-shop__block-list-item-active')
-    $('#indexShopButton-4').removeClass('ind-shop__block-list-item-active')
-    $('#indexShopButton-5').removeClass('ind-shop__block-list-item-active')
+    $(this).addClass('shop__block-list-item-active')
+    $('#indexShopButton-1').removeClass('shop__block-list-item-active')
+    $('#indexShopButton-3').removeClass('shop__block-list-item-active')
+    $('#indexShopButton-4').removeClass('shop__block-list-item-active')
+    $('#indexShopButton-5').removeClass('shop__block-list-item-active')
     $('#indexShopElement-2').removeClass('display-n')
     $('#indexShopElement-1').addClass('display-n')
     $('#indexShopElement-3').addClass('display-n')
@@ -58,11 +98,11 @@ $('#indexShopButton-2').on('click', function() {
     $('#indexShopElement-5').addClass('display-n')
 });
 $('#indexShopButton-3').on('click', function() {
-    $(this).addClass('ind-shop__block-list-item-active')
-    $('#indexShopButton-2').removeClass('ind-shop__block-list-item-active')
-    $('#indexShopButton-1').removeClass('ind-shop__block-list-item-active')
-    $('#indexShopButton-4').removeClass('ind-shop__block-list-item-active')
-    $('#indexShopButton-5').removeClass('ind-shop__block-list-item-active')
+    $(this).addClass('shop__block-list-item-active')
+    $('#indexShopButton-2').removeClass('shop__block-list-item-active')
+    $('#indexShopButton-1').removeClass('shop__block-list-item-active')
+    $('#indexShopButton-4').removeClass('shop__block-list-item-active')
+    $('#indexShopButton-5').removeClass('shop__block-list-item-active')
     $('#indexShopElement-3').removeClass('display-n')
     $('#indexShopElement-2').addClass('display-n')
     $('#indexShopElement-1').addClass('display-n')
@@ -70,11 +110,11 @@ $('#indexShopButton-3').on('click', function() {
     $('#indexShopElement-5').addClass('display-n')
 });
 $('#indexShopButton-4').on('click', function() {
-    $(this).addClass('ind-shop__block-list-item-active')
-    $('#indexShopButton-2').removeClass('ind-shop__block-list-item-active')
-    $('#indexShopButton-3').removeClass('ind-shop__block-list-item-active')
-    $('#indexShopButton-1').removeClass('ind-shop__block-list-item-active')
-    $('#indexShopButton-5').removeClass('ind-shop__block-list-item-active')
+    $(this).addClass('shop__block-list-item-active')
+    $('#indexShopButton-2').removeClass('shop__block-list-item-active')
+    $('#indexShopButton-3').removeClass('shop__block-list-item-active')
+    $('#indexShopButton-1').removeClass('shop__block-list-item-active')
+    $('#indexShopButton-5').removeClass('shop__block-list-item-active')
     $('#indexShopElement-4').removeClass('display-n')
     $('#indexShopElement-2').addClass('display-n')
     $('#indexShopElement-3').addClass('display-n')
@@ -82,11 +122,11 @@ $('#indexShopButton-4').on('click', function() {
     $('#indexShopElement-5').addClass('display-n')
 });
 $('#indexShopButton-5').on('click', function() {
-    $(this).addClass('ind-shop__block-list-item-active')
-    $('#indexShopButton-2').removeClass('ind-shop__block-list-item-active')
-    $('#indexShopButton-3').removeClass('ind-shop__block-list-item-active')
-    $('#indexShopButton-4').removeClass('ind-shop__block-list-item-active')
-    $('#indexShopButton-1').removeClass('ind-shop__block-list-item-active')
+    $(this).addClass('shop__block-list-item-active')
+    $('#indexShopButton-2').removeClass('shop__block-list-item-active')
+    $('#indexShopButton-3').removeClass('shop__block-list-item-active')
+    $('#indexShopButton-4').removeClass('shop__block-list-item-active')
+    $('#indexShopButton-1').removeClass('shop__block-list-item-active')
     $('#indexShopElement-5').removeClass('display-n')
     $('#indexShopElement-2').addClass('display-n')
     $('#indexShopElement-3').addClass('display-n')
@@ -248,3 +288,130 @@ $(function() {
     })
 })
 
+$('.catalog-content__block-filter-titles').on('click', () => {
+    $('.catalog-content__block-filter-titles svg').toggleClass('rotate-180');
+});
+
+
+
+let activeContentCatalog = 0
+let elementContentCountCatalog = 4
+
+$('#catalogCatalogNext').on('click', function() {
+    changeSlideCatalog('next')
+})
+
+$('#catalogCatalogPrev').on('click', function() {
+    changeSlideCatalog('prev')
+})
+
+$('#catalogCatalogButton-1').on('click', function() {
+    changeSlideCatalog(0)
+})
+$('#catalogCatalogButton-2').on('click', function() {
+    changeSlideCatalog(1)
+})
+$('#catalogCatalogButton-3').on('click', function() {
+    changeSlideCatalog(2)
+})
+$('#catalogCatalogButton-4').on('click', function() {
+    changeSlideCatalog(3)
+})
+
+function changeSlideCatalog(id) { 
+    if(id === 'next') {
+        activeContentCatalog++
+        if (activeContentCatalog === elementContentCountCatalog) {
+            activeContentCatalog = 0
+        } 
+    } else if (id === 'prev') {
+        activeContentCatalog--
+        if (activeContentCatalog < 0) {
+            activeContentCatalog = elementContentCountCatalog - 1
+        }
+    }
+    if(activeContentCatalog == 0) {
+        $('#catalogCatalogButton-1').addClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogButton-2').removeClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogButton-3').removeClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogButton-4').removeClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogBlock-1').removeClass('display-n')
+        $('#catalogCatalogBlock-2').addClass('display-n')
+        $('#catalogCatalogBlock-3').addClass('display-n')
+        $('#catalogCatalogBlock-4').addClass('display-n')
+    }
+    if(activeContentCatalog == 1) {
+        $('#catalogCatalogButton-2').addClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogButton-1').removeClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogButton-3').removeClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogButton-4').removeClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogBlock-2').removeClass('display-n')
+        $('#catalogCatalogBlock-1').addClass('display-n')
+        $('#catalogCatalogBlock-3').addClass('display-n')
+        $('#catalogCatalogBlock-4').addClass('display-n')
+    }
+    if(activeContentCatalog == 2) {
+        $('#catalogCatalogButton-3').addClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogButton-2').removeClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogButton-1').removeClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogButton-4').removeClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogBlock-3').removeClass('display-n')
+        $('#catalogCatalogBlock-2').addClass('display-n')
+        $('#catalogCatalogBlock-1').addClass('display-n')
+        $('#catalogCatalogBlock-4').addClass('display-n')
+    }
+    if(activeContentCatalog == 3) {
+        $('#catalogCatalogButton-4').addClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogButton-3').removeClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogButton-2').removeClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogButton-1').removeClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogBlock-4').removeClass('display-n')
+        $('#catalogCatalogBlock-3').addClass('display-n')
+        $('#catalogCatalogBlock-2').addClass('display-n')
+        $('#catalogCatalogBlock-1').addClass('display-n')
+    }
+    if(id == 0) {
+        activeContentCatalog = 0
+        $('#catalogCatalogButton-1').addClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogButton-2').removeClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogButton-3').removeClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogButton-4').removeClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogBlock-1').removeClass('display-n')
+        $('#catalogCatalogBlock-2').addClass('display-n')
+        $('#catalogCatalogBlock-3').addClass('display-n')
+        $('#catalogCatalogBlock-4').addClass('display-n')
+    }
+    if(id == 1) {
+        activeContentCatalog = 1
+        $('#catalogCatalogButton-2').addClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogButton-1').removeClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogButton-3').removeClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogButton-4').removeClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogBlock-2').removeClass('display-n')
+        $('#catalogCatalogBlock-1').addClass('display-n')
+        $('#catalogCatalogBlock-3').addClass('display-n')
+        $('#catalogCatalogBlock-4').addClass('display-n')
+    }
+    if(id == 2) {
+        activeContentCatalog = 2
+        $('#catalogCatalogButton-3').addClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogButton-2').removeClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogButton-1').removeClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogButton-4').removeClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogBlock-3').removeClass('display-n')
+        $('#catalogCatalogBlock-2').addClass('display-n')
+        $('#catalogCatalogBlock-1').addClass('display-n')
+        $('#catalogCatalogBlock-4').addClass('display-n')
+    }
+    if(id == 3) {
+        activeContentCatalog = 3
+        $('#catalogCatalogButton-4').addClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogButton-3').removeClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogButton-2').removeClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogButton-1').removeClass('catalog-content__block-count-item-active')
+        $('#catalogCatalogBlock-4').removeClass('display-n')
+        $('#catalogCatalogBlock-3').addClass('display-n')
+        $('#catalogCatalogBlock-2').addClass('display-n')
+        $('#catalogCatalogBlock-1').addClass('display-n')
+    }
+}

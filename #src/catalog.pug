@@ -1,0 +1,153 @@
+@@include('components/_head.pug', {
+    'title': 'Каталог'
+})
+
+    @@include('components/_header.pug')
+
+    section.catalog-content 
+        .containers 
+            .catalog-content__block 
+                .catalog-content__block-filter 
+                    .catalog-content__block-filter-title Фильтр
+                    .catalog-content__block-filter-titles 
+                        p Категории
+                        <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.021 2.02101L10 10.042L1.97899 2.02101" stroke="#D65E54" stroke-width="4"/>
+                        </svg>
+
+                    .catalog-content__block-filter-checkbox
+                        input(class="catalog-content__block-filter-checkbox__input" type="checkbox" id="checkbox_1" checked)
+                        label(class="catalog-content__block-filter-checkbox__label" for="checkbox_1") Категория 1
+                    .catalog-content__block-filter-checkbox
+                        input(class="catalog-content__block-filter-checkbox__input" type="checkbox" id="checkbox_2")
+                        label(class="catalog-content__block-filter-checkbox__label" for="checkbox_2") Категория 1
+                    .catalog-content__block-filter-checkbox
+                        input(class="catalog-content__block-filter-checkbox__input" type="checkbox" id="checkbox_3")
+                        label(class="catalog-content__block-filter-checkbox__label" for="checkbox_3") Категория 1
+                    .catalog-content__block-filter-checkbox
+                        input(class="catalog-content__block-filter-checkbox__input" type="checkbox" id="checkbox_4")
+                        label(class="catalog-content__block-filter-checkbox__label" for="checkbox_4") Категория 1
+                    
+                    .catalog-content__block-filter-add 
+                        p + Еще категории
+
+                    button.catalog-content__block-filter-btn
+                        p Сбросить
+                ul.catalog-content__block-list 
+                    li.catalog-content__block-list-items 
+                        .catalog-content__block-list-items-photo 
+                            img(src="./img/catalog/catalog-1.png", alt="img")
+                        .catalog-content__block-list-items-content 
+                            .catalog-content__block-list-items-content-type 
+                                p Повесть
+                            .catalog-content__block-list-items-content-title 
+                                p История Чингиз-хан
+                            .catalog-content__block-list-items-content-authors
+                                p Ахун Мансур
+                                .catalog-content__block-list-items-content-authors-add 
+                                    <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.3749 0.451654L4.63168 3.80875L0.73147 4.34883C0.0320473 4.44518 -0.248256 5.26417 0.258959 5.73325L3.08067 8.3449L2.41329 12.0342C2.29316 12.701 3.03262 13.2005 3.65196 12.8886L7.14106 11.1467L10.6302 12.8886C11.2495 13.198 11.989 12.701 11.8688 12.0342L11.2014 8.3449L14.0232 5.73325C14.5304 5.26417 14.2501 4.44518 13.5506 4.34883L9.65044 3.80875L7.90722 0.451654C7.59488 -0.146742 6.68991 -0.154349 6.3749 0.451654Z" fill="#FF7A00"/>
+                                    </svg>
+                                    p 4.1 
+                                        span (166 отзывов)
+                            .catalog-content__block-list-items-content-text 
+                                p "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                        .catalog-content__block-list-items-price 
+                            .catalog-content__block-list-items-price-last ₽ 6 800
+                            .catalog-content__block-list-items-price-prev
+                                p ₽ 7 800
+                                .catalog-content__block-list-items-price-prev-add 10%
+                            button.catalog-content__block-list-items-price-btn
+                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.7999 7.33576H21.0062L16.8129 1.04012C16.6461 0.790041 16.3868 0.616472 16.092 0.557599C15.7972 0.498725 15.4911 0.559369 15.241 0.726189C14.9909 0.89301 14.8173 1.15234 14.7585 1.44714C14.6996 1.74193 14.7602 2.04804 14.9271 2.29812L18.2828 7.33576H6.65037L10.0096 2.29812C10.1764 2.04804 10.237 1.74193 10.1781 1.44714C10.1193 1.15234 9.9457 0.89301 9.69562 0.726189C9.44554 0.559369 9.13943 0.498725 8.84464 0.557599C8.54985 0.616472 8.29052 0.790041 8.1237 1.04012L3.92698 7.33576H1.13333C0.832751 7.33576 0.544484 7.45516 0.331944 7.66771C0.119404 7.88025 0 8.16851 0 8.46909C0 8.76967 0.119404 9.05793 0.331944 9.27047C0.544484 9.48301 0.832751 9.60242 1.13333 9.60242H2.26666V18.669C2.26666 19.5708 2.62487 20.4356 3.26249 21.0732C3.90011 21.7108 4.76491 22.069 5.66664 22.069H19.2666C20.1683 22.069 21.0331 21.7108 21.6707 21.0732C22.3083 20.4356 22.6666 19.5708 22.6666 18.669V9.60242H23.7999C24.1005 9.60242 24.3887 9.48301 24.6013 9.27047C24.8138 9.05793 24.9332 8.76967 24.9332 8.46909C24.9332 8.16851 24.8138 7.88025 24.6013 7.66771C24.3887 7.45516 24.1005 7.33576 23.7999 7.33576ZM20.3999 18.669C20.3999 18.9696 20.2805 19.2579 20.068 19.4704C19.8554 19.683 19.5672 19.8024 19.2666 19.8024H5.66664C5.36606 19.8024 5.0778 19.683 4.86526 19.4704C4.65272 19.2579 4.53331 18.9696 4.53331 18.669V9.60242H20.3999V18.669Z" fill="white"/>
+                                    <path d="M7.93313 18.1022C8.23371 18.1022 8.52197 17.9828 8.73451 17.7703C8.94705 17.5577 9.06646 17.2695 9.06646 16.9689V12.4356C9.06646 12.135 8.94705 11.8467 8.73451 11.6342C8.52197 11.4217 8.23371 11.3022 7.93313 11.3022C7.63255 11.3022 7.34429 11.4217 7.13175 11.6342C6.91921 11.8467 6.7998 12.135 6.7998 12.4356V16.9689C6.7998 17.2695 6.91921 17.5577 7.13175 17.7703C7.34429 17.9828 7.63255 18.1022 7.93313 18.1022Z" fill="white"/>
+                                    <path d="M12.4663 18.1022C12.7669 18.1022 13.0552 17.9828 13.2677 17.7703C13.4803 17.5577 13.5997 17.2695 13.5997 16.9689V12.4356C13.5997 12.135 13.4803 11.8467 13.2677 11.6342C13.0552 11.4217 12.7669 11.3022 12.4663 11.3022C12.1658 11.3022 11.8775 11.4217 11.665 11.6342C11.4524 11.8467 11.333 12.135 11.333 12.4356V16.9689C11.333 17.2695 11.4524 17.5577 11.665 17.7703C11.8775 17.9828 12.1658 18.1022 12.4663 18.1022Z" fill="white"/>
+                                    <path d="M16.9995 18.1022C17.3001 18.1022 17.5884 17.9828 17.8009 17.7703C18.0135 17.5577 18.1329 17.2695 18.1329 16.9689V12.4356C18.1329 12.135 18.0135 11.8467 17.8009 11.6342C17.5884 11.4217 17.3001 11.3022 16.9995 11.3022C16.699 11.3022 16.4107 11.4217 16.1982 11.6342C15.9856 11.8467 15.8662 12.135 15.8662 12.4356V16.9689C15.8662 17.2695 15.9856 17.5577 16.1982 17.7703C16.4107 17.9828 16.699 18.1022 16.9995 18.1022Z" fill="white"/>
+                                </svg>
+                                p Купить
+                    li.catalog-content__block-list-items 
+                        .catalog-content__block-list-items-photo 
+                            img(src="./img/catalog/catalog-1.png", alt="img")
+                        .catalog-content__block-list-items-content 
+                            .catalog-content__block-list-items-content-type 
+                                p Повесть
+                            .catalog-content__block-list-items-content-title 
+                                p История Чингиз-хан
+                            .catalog-content__block-list-items-content-authors
+                                p Ахун Мансур
+                                .catalog-content__block-list-items-content-authors-add 
+                                    <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.3749 0.451654L4.63168 3.80875L0.73147 4.34883C0.0320473 4.44518 -0.248256 5.26417 0.258959 5.73325L3.08067 8.3449L2.41329 12.0342C2.29316 12.701 3.03262 13.2005 3.65196 12.8886L7.14106 11.1467L10.6302 12.8886C11.2495 13.198 11.989 12.701 11.8688 12.0342L11.2014 8.3449L14.0232 5.73325C14.5304 5.26417 14.2501 4.44518 13.5506 4.34883L9.65044 3.80875L7.90722 0.451654C7.59488 -0.146742 6.68991 -0.154349 6.3749 0.451654Z" fill="#FF7A00"/>
+                                    </svg>
+                                    p 4.1 
+                                        span (166 отзывов)
+                            .catalog-content__block-list-items-content-text 
+                                p "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                        .catalog-content__block-list-items-price 
+                            .catalog-content__block-list-items-price-last ₽ 6 800
+                            .catalog-content__block-list-items-price-prev
+                                p ₽ 7 800
+                                .catalog-content__block-list-items-price-prev-add 10%
+                            button.catalog-content__block-list-items-price-btn
+                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.7999 7.33576H21.0062L16.8129 1.04012C16.6461 0.790041 16.3868 0.616472 16.092 0.557599C15.7972 0.498725 15.4911 0.559369 15.241 0.726189C14.9909 0.89301 14.8173 1.15234 14.7585 1.44714C14.6996 1.74193 14.7602 2.04804 14.9271 2.29812L18.2828 7.33576H6.65037L10.0096 2.29812C10.1764 2.04804 10.237 1.74193 10.1781 1.44714C10.1193 1.15234 9.9457 0.89301 9.69562 0.726189C9.44554 0.559369 9.13943 0.498725 8.84464 0.557599C8.54985 0.616472 8.29052 0.790041 8.1237 1.04012L3.92698 7.33576H1.13333C0.832751 7.33576 0.544484 7.45516 0.331944 7.66771C0.119404 7.88025 0 8.16851 0 8.46909C0 8.76967 0.119404 9.05793 0.331944 9.27047C0.544484 9.48301 0.832751 9.60242 1.13333 9.60242H2.26666V18.669C2.26666 19.5708 2.62487 20.4356 3.26249 21.0732C3.90011 21.7108 4.76491 22.069 5.66664 22.069H19.2666C20.1683 22.069 21.0331 21.7108 21.6707 21.0732C22.3083 20.4356 22.6666 19.5708 22.6666 18.669V9.60242H23.7999C24.1005 9.60242 24.3887 9.48301 24.6013 9.27047C24.8138 9.05793 24.9332 8.76967 24.9332 8.46909C24.9332 8.16851 24.8138 7.88025 24.6013 7.66771C24.3887 7.45516 24.1005 7.33576 23.7999 7.33576ZM20.3999 18.669C20.3999 18.9696 20.2805 19.2579 20.068 19.4704C19.8554 19.683 19.5672 19.8024 19.2666 19.8024H5.66664C5.36606 19.8024 5.0778 19.683 4.86526 19.4704C4.65272 19.2579 4.53331 18.9696 4.53331 18.669V9.60242H20.3999V18.669Z" fill="white"/>
+                                    <path d="M7.93313 18.1022C8.23371 18.1022 8.52197 17.9828 8.73451 17.7703C8.94705 17.5577 9.06646 17.2695 9.06646 16.9689V12.4356C9.06646 12.135 8.94705 11.8467 8.73451 11.6342C8.52197 11.4217 8.23371 11.3022 7.93313 11.3022C7.63255 11.3022 7.34429 11.4217 7.13175 11.6342C6.91921 11.8467 6.7998 12.135 6.7998 12.4356V16.9689C6.7998 17.2695 6.91921 17.5577 7.13175 17.7703C7.34429 17.9828 7.63255 18.1022 7.93313 18.1022Z" fill="white"/>
+                                    <path d="M12.4663 18.1022C12.7669 18.1022 13.0552 17.9828 13.2677 17.7703C13.4803 17.5577 13.5997 17.2695 13.5997 16.9689V12.4356C13.5997 12.135 13.4803 11.8467 13.2677 11.6342C13.0552 11.4217 12.7669 11.3022 12.4663 11.3022C12.1658 11.3022 11.8775 11.4217 11.665 11.6342C11.4524 11.8467 11.333 12.135 11.333 12.4356V16.9689C11.333 17.2695 11.4524 17.5577 11.665 17.7703C11.8775 17.9828 12.1658 18.1022 12.4663 18.1022Z" fill="white"/>
+                                    <path d="M16.9995 18.1022C17.3001 18.1022 17.5884 17.9828 17.8009 17.7703C18.0135 17.5577 18.1329 17.2695 18.1329 16.9689V12.4356C18.1329 12.135 18.0135 11.8467 17.8009 11.6342C17.5884 11.4217 17.3001 11.3022 16.9995 11.3022C16.699 11.3022 16.4107 11.4217 16.1982 11.6342C15.9856 11.8467 15.8662 12.135 15.8662 12.4356V16.9689C15.8662 17.2695 15.9856 17.5577 16.1982 17.7703C16.4107 17.9828 16.699 18.1022 16.9995 18.1022Z" fill="white"/>
+                                </svg>
+                                p Купить
+                    li.catalog-content__block-list-items 
+                        .catalog-content__block-list-items-photo 
+                            img(src="./img/catalog/catalog-1.png", alt="img")
+                        .catalog-content__block-list-items-content 
+                            .catalog-content__block-list-items-content-type 
+                                p Повесть
+                            .catalog-content__block-list-items-content-title 
+                                p История Чингиз-хан
+                            .catalog-content__block-list-items-content-authors
+                                p Ахун Мансур
+                                .catalog-content__block-list-items-content-authors-add 
+                                    <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.3749 0.451654L4.63168 3.80875L0.73147 4.34883C0.0320473 4.44518 -0.248256 5.26417 0.258959 5.73325L3.08067 8.3449L2.41329 12.0342C2.29316 12.701 3.03262 13.2005 3.65196 12.8886L7.14106 11.1467L10.6302 12.8886C11.2495 13.198 11.989 12.701 11.8688 12.0342L11.2014 8.3449L14.0232 5.73325C14.5304 5.26417 14.2501 4.44518 13.5506 4.34883L9.65044 3.80875L7.90722 0.451654C7.59488 -0.146742 6.68991 -0.154349 6.3749 0.451654Z" fill="#FF7A00"/>
+                                    </svg>
+                                    p 4.1 
+                                        span (166 отзывов)
+                            .catalog-content__block-list-items-content-text 
+                                p "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                        .catalog-content__block-list-items-price 
+                            .catalog-content__block-list-items-price-last ₽ 6 800
+                            .catalog-content__block-list-items-price-prev
+                                p ₽ 7 800
+                                .catalog-content__block-list-items-price-prev-add 10%
+                            button.catalog-content__block-list-items-price-btn
+                                <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.7999 7.33576H21.0062L16.8129 1.04012C16.6461 0.790041 16.3868 0.616472 16.092 0.557599C15.7972 0.498725 15.4911 0.559369 15.241 0.726189C14.9909 0.89301 14.8173 1.15234 14.7585 1.44714C14.6996 1.74193 14.7602 2.04804 14.9271 2.29812L18.2828 7.33576H6.65037L10.0096 2.29812C10.1764 2.04804 10.237 1.74193 10.1781 1.44714C10.1193 1.15234 9.9457 0.89301 9.69562 0.726189C9.44554 0.559369 9.13943 0.498725 8.84464 0.557599C8.54985 0.616472 8.29052 0.790041 8.1237 1.04012L3.92698 7.33576H1.13333C0.832751 7.33576 0.544484 7.45516 0.331944 7.66771C0.119404 7.88025 0 8.16851 0 8.46909C0 8.76967 0.119404 9.05793 0.331944 9.27047C0.544484 9.48301 0.832751 9.60242 1.13333 9.60242H2.26666V18.669C2.26666 19.5708 2.62487 20.4356 3.26249 21.0732C3.90011 21.7108 4.76491 22.069 5.66664 22.069H19.2666C20.1683 22.069 21.0331 21.7108 21.6707 21.0732C22.3083 20.4356 22.6666 19.5708 22.6666 18.669V9.60242H23.7999C24.1005 9.60242 24.3887 9.48301 24.6013 9.27047C24.8138 9.05793 24.9332 8.76967 24.9332 8.46909C24.9332 8.16851 24.8138 7.88025 24.6013 7.66771C24.3887 7.45516 24.1005 7.33576 23.7999 7.33576ZM20.3999 18.669C20.3999 18.9696 20.2805 19.2579 20.068 19.4704C19.8554 19.683 19.5672 19.8024 19.2666 19.8024H5.66664C5.36606 19.8024 5.0778 19.683 4.86526 19.4704C4.65272 19.2579 4.53331 18.9696 4.53331 18.669V9.60242H20.3999V18.669Z" fill="white"/>
+                                    <path d="M7.93313 18.1022C8.23371 18.1022 8.52197 17.9828 8.73451 17.7703C8.94705 17.5577 9.06646 17.2695 9.06646 16.9689V12.4356C9.06646 12.135 8.94705 11.8467 8.73451 11.6342C8.52197 11.4217 8.23371 11.3022 7.93313 11.3022C7.63255 11.3022 7.34429 11.4217 7.13175 11.6342C6.91921 11.8467 6.7998 12.135 6.7998 12.4356V16.9689C6.7998 17.2695 6.91921 17.5577 7.13175 17.7703C7.34429 17.9828 7.63255 18.1022 7.93313 18.1022Z" fill="white"/>
+                                    <path d="M12.4663 18.1022C12.7669 18.1022 13.0552 17.9828 13.2677 17.7703C13.4803 17.5577 13.5997 17.2695 13.5997 16.9689V12.4356C13.5997 12.135 13.4803 11.8467 13.2677 11.6342C13.0552 11.4217 12.7669 11.3022 12.4663 11.3022C12.1658 11.3022 11.8775 11.4217 11.665 11.6342C11.4524 11.8467 11.333 12.135 11.333 12.4356V16.9689C11.333 17.2695 11.4524 17.5577 11.665 17.7703C11.8775 17.9828 12.1658 18.1022 12.4663 18.1022Z" fill="white"/>
+                                    <path d="M16.9995 18.1022C17.3001 18.1022 17.5884 17.9828 17.8009 17.7703C18.0135 17.5577 18.1329 17.2695 18.1329 16.9689V12.4356C18.1329 12.135 18.0135 11.8467 17.8009 11.6342C17.5884 11.4217 17.3001 11.3022 16.9995 11.3022C16.699 11.3022 16.4107 11.4217 16.1982 11.6342C15.9856 11.8467 15.8662 12.135 15.8662 12.4356V16.9689C15.8662 17.2695 15.9856 17.5577 16.1982 17.7703C16.4107 17.9828 16.699 18.1022 16.9995 18.1022Z" fill="white"/>
+                                </svg>
+                                p Купить
+                    <div class="catalog-content__block-count">
+                        <div class="catalog-content__block-count-prev" id="catalogCatalogPrev">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 7H3.83L9.42 1.41L8 0L0 8L8 16L9.41 14.59L3.83 9H16V7Z" fill="#EA3B32"></path>
+                            </svg>
+                        </div>
+                        <div class="catalog-content__block-count-item catalog-content__block-count-item-active" id="catalogCatalogButton-1">1</div>
+                        <div class="catalog-content__block-count-item" id="catalogCatalogButton-2">2</div>
+                        <div class="catalog-content__block-count-item" id="catalogCatalogButton-3">3</div>
+                        <div class="catalog-content__block-count-item" id="catalogCatalogButton-4">4</div>
+                        <div class="catalog-content__block-count-next" id="catalogCatalogNext">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="#EA3B32"></path>
+                            </svg>
+                        </div>
+                        </div>
+
+    @@include('components/_rec.pug')
+
+    @@include('components/_part.pug')
+
+@@include('components/_footer.pug')
+
+@@include('components/_script.pug')

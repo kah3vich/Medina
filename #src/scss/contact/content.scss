@@ -1,0 +1,30 @@
+.contact-header {
+    width: 100%;
+    padding: 110px 0 30px 0;
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 0 190px;
+        &-title {
+            font-family: TT Norms;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 48px;
+            color: #2E2E2E;
+        }
+        &-description {
+            width: 90%;
+            margin: 45px 0 0 0;
+            font-family: TT Norms;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 32px;
+            color: rgba(0, 0, 0, 0.7);
+        }
+    }
+}

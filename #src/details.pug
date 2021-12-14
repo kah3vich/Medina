@@ -1,0 +1,88 @@
+@@include('components/_head.pug', {
+    'title': 'Детальные Новости'
+})
+
+    @@include('components/_header.pug')
+
+    section.detls-header 
+        .containers 
+            .detls-header__block 
+                .detls-header__block-title 
+                    p Подарки на Новый год и Рождество: какие книги подарить близким
+                .detls-header__block-banner 
+                    img(src="./img/details/banner.png", alt="img")
+                .detls-header__block-wrapper 
+                    .detls-header__block-description 
+                        p Ищете подарки на Новый год и Рождество для самых близких? Мы поискали среди самых интересных новинок года и составили подсказки, которые помогут подобрать книгу в подарок маме или тёте, папе или дедушке, мужу, жене или ребёнку.
+                    .detls-header__block-photo 
+                        .detls-header__block-photo-items 
+                            img(src="./img/details/add-1.png", alt="img")
+                        .detls-header__block-photo-items 
+                            img(src="./img/details/add-2.png", alt="img")
+                    .detls-header__block-question 
+                        p Книга лучший подарок?
+                    .detls-header__block-text 
+                        p Книга лучший подарок? Ладно, ладно, возможно, сейчас это выражение несколько устарело, но красивое издание с интересной обложкой и не менее интересным содержанием всё равно очень приятно найти под ёлочкой. Хотя бы как дополнение к основному подарку. В этом материале собрали несколько идей, чтобы помочь вам сориентироваться в огромном выборе.
+                            br
+                            br
+                            | Один из критериев, по которым мы оценивали книги перед тем, как добавить в галерею ниже, их новизна. Конечно, есть немало людей, которые порадуются полному собранию сочинений Максима Горького, но нам всё же хотелось предложить вам выбор из новинок. Целевую аудиторию для каждого из вариантов назвали условно – например, книга, которую мы рекомендуем для мамы, вполне сгодится и для тёти, бабушки, коллеги или подруги. А вариант «Для ребёнка» вполне можно положить младшему брату или другу, который не забыл своё детство. Всё-таки когда выбираешь подарок, очень важно думать о том, кому ты его даришь, и учитывать его особенности и предпочтения.
+                    .detls-header__block-add 
+                        p Тэги: Подарки, книги, новый год
+                        ul.detls-header__block-adds 
+                            li.detls-header__block-adds-items 
+                                a(href="#") Tg
+                            li.detls-header__block-adds-items 
+                                a(href="#") Vk
+                            li.detls-header__block-adds-items 
+                                a(href="#") Tw
+                            li.detls-header__block-adds-items 
+                                a(href="#") Fb
+                            li.detls-header__block-adds-items 
+                                a(href="#") Ce
+
+    section.detls-catalog 
+        .containers 
+            .detls-catalog__block 
+                .detls-catalog__block-title 
+                    p Рекомендуемые новости
+                ul.detls-catalog__block-table
+                    li.detls-catalog__block-table-items 
+                        .detls-catalog__block-table-items-photo 
+                            img(src="./img/details/add-1.png", alt="img")
+                        .detls-catalog__block-table-items-wrapper 
+                            .detls-catalog__block-table-items-type 
+                                a(href="#") Подарки
+                            .detls-catalog__block-table-items-title Подарки на Новый год и Рождество: какие книги подарить близким
+                            .detls-catalog__block-table-items-btns 
+                                p сегодня в 9:37
+                                button.detls-catalog__block-table-items-btn
+                                    p Подробнее
+                    li.detls-catalog__block-table-items 
+                        .detls-catalog__block-table-items-photo 
+                            img(src="./img/details/add-2.png", alt="img")
+                        .detls-catalog__block-table-items-wrapper 
+                            .detls-catalog__block-table-items-type 
+                                a(href="#") Подарки
+                            .detls-catalog__block-table-items-title Подарки на Новый год и Рождество: какие книги подарить близким
+                            .detls-catalog__block-table-items-btns 
+                                p сегодня в 9:37
+                                button.detls-catalog__block-table-items-btn
+                                    p Подробнее
+                    li.detls-catalog__block-table-items 
+                        .detls-catalog__block-table-items-photo 
+                            img(src="./img/details/add-3.png", alt="img")
+                        .detls-catalog__block-table-items-wrapper 
+                            .detls-catalog__block-table-items-type 
+                                a(href="#") Подарки
+                            .detls-catalog__block-table-items-title Подарки на Новый год и Рождество: какие книги подарить близким
+                            .detls-catalog__block-table-items-btns 
+                                p сегодня в 9:37
+                                button.detls-catalog__block-table-items-btn
+                                    p Подробнее
+
+
+    @@include('components/_part.pug')
+
+@@include('components/_footer.pug')
+
+@@include('components/_script.pug')
