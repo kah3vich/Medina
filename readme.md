@@ -6,3 +6,4 @@
 # Contact: [click me](https://kah3vich.github.io/Medina/public/contact.html)
 # Info: [click me](https://kah3vich.github.io/Medina/public/info.html)
 # Catalog: [click me](https://kah3vich.github.io/Medina/public/catalog.html)
+# Detail: [click me](https://kah3vich.github.io/Medina/public/detail.html)

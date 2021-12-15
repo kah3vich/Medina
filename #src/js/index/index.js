@@ -6,9 +6,10 @@ var recSlider = new Swiper(".recSlider", {
     pagination: {
         el: ".rec__slider .swiper-controls .swiper-pagination",
     },
-    mousewheel: true,
-    slidesPerView: 1,
+    // mousewheel: true,
+    slidesPerView: 3,
     spaceBetween: 0,
+    loop: true,
 });
 var videoSlider = new Swiper(".videoSlider", {
     navigation: {
@@ -18,9 +19,10 @@ var videoSlider = new Swiper(".videoSlider", {
     pagination: {
         el: ".video__slider .swiper-controls .swiper-pagination",
     },
-    mousewheel: true,
-    slidesPerView: 1,
+    // mousewheel: true,
+    slidesPerView: 3,
     spaceBetween: 0,
+    loop: true,
 });
 var authorsSlider = new Swiper(".authorsSlider", {
     navigation: {

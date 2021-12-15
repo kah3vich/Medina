@@ -24,6 +24,7 @@
 @import "info/style";
 @import "contact/style";
 @import "catalog/style";
+@import "detail/style";
 
 
 //! --------------------------------------------------------------------
@@ -377,7 +378,7 @@ p {
                 align-items: center;
                 justify-content: center;
                 opacity: 1;
-                top: 42%;
+                top: 55%;
                 right: 3%;
                 &::after {
                     content: "";
@@ -397,7 +398,7 @@ p {
                 align-items: center;
                 justify-content: center;
                 opacity: 1;
-                top: 42%;
+                top: 55%;
                 left: 3%;
                 &::after {
                     content: "";
@@ -552,6 +553,11 @@ p {
     &__slider {
         width: 100%;
         padding: 34px 0 90px 0;
+        overflow: hidden;
+        & .swiper {
+            width: 170%;
+            margin: 0 0 0 -35%;
+        }
         & .swiper-button-next {
             width: 57px;
             height: 57px;
@@ -561,7 +567,7 @@ p {
             display: flex;
             align-items: center;
             justify-content: center;
-            right: 13%;
+            right: 20%;
             top: 60%;
             opacity: 1;
             cursor: pointer;
@@ -572,8 +578,14 @@ p {
                 content: url(../svg/index/arrow-next.svg);
             }
         }
+        & .swiper-slide {
+            opacity: 0.5;
+            &-next {
+                opacity: 1 !important;
+            }
+        }
         & .swiper-button-prev {
-            left: 13%;
+            left: 20%;
             top: 60%;
             width: 57px;
             cursor: pointer;
@@ -766,6 +778,11 @@ p {
     &__slider {
         width: 100%;
         padding: 34px 0 90px 0;
+        overflow: hidden;
+        & .swiper {
+            width: 220%;
+            margin: 0px 0 0 -60%;
+        }
         & .swiper-button-next {
             width: 57px;
             height: 57px;
