@@ -1,0 +1,50 @@
+@@include('components/_head.pug', {
+    'title': 'Галерея'
+})
+
+    @@include('components/_header.pug')
+
+    section.gallery-content 
+        .containers 
+            .gallery-content__title Фото архив
+            ul.gallery-content__photo 
+                li.gallery-content__photo-items 
+                    img(src="./img/gallery/photo-1.png", alt="img")
+                li.gallery-content__photo-items 
+                    img(src="./img/gallery/photo-2.png", alt="img")
+                li.gallery-content__photo-items 
+                    img(src="./img/gallery/photo-3.png", alt="img")
+                li.gallery-content__photo-items 
+                    img(src="./img/gallery/photo-4.png", alt="img")
+                li.gallery-content__photo-items 
+                    img(src="./img/gallery/photo-3.png", alt="img")
+                li.gallery-content__photo-items 
+                    img(src="./img/gallery/photo-2.png", alt="img")
+                li.gallery-content__photo-items 
+                    img(src="./img/gallery/photo-4.png", alt="img")
+                li.gallery-content__photo-items 
+                    img(src="./img/gallery/photo-2.png", alt="img")
+                li.gallery-content__photo-items 
+                    img(src="./img/gallery/photo-2.png", alt="img")
+                li.gallery-content__photo-items 
+                    img(src="./img/gallery/photo-2.png", alt="img")
+                li.gallery-content__photo-items 
+                    img(src="./img/gallery/photo-4.png", alt="img")
+                li.gallery-content__photo-items 
+                    img(src="./img/gallery/photo-2.png", alt="img")
+                li.gallery-content__photo-items 
+                    img(src="./img/gallery/photo-4.png", alt="img")
+                li.gallery-content__photo-items 
+                    img(src="./img/gallery/photo-3.png", alt="img")
+                li.gallery-content__photo-items 
+                    img(src="./img/gallery/photo-2.png", alt="img")
+                li.gallery-content__photo-items 
+                    img(src="./img/gallery/photo-1.png", alt="img")
+            button.gallery-content__btn 
+                p Еще фото
+
+    @@include('components/_part.pug')
+
+@@include('components/_footer.pug')
+
+@@include('components/_script.pug')

@@ -1,0 +1,316 @@
+.comment-review {
+    width: 100%;
+    padding: 110px 0;
+    & .containers {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    &__title {
+        font-family: Spectral;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 42px;
+        letter-spacing: 0.09em;
+        color: #2E2E2E;
+    }
+    &__block {
+        margin: 75px 0 0 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        &-content {
+            width: 728px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            &-title {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 28px;
+                line-height: 33px;
+                color: #000000;
+            }
+            &-type {
+                margin: 18px 0 0 0;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 27px;
+                color: #D65E54;
+            }
+            &-people {
+                margin: 35px 0 0 0;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                &-photo {
+                    width: 42px;
+                    height: 42px;
+                    background: #C4C4C4;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                &-name {
+                    margin: 0 0 0 15px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: rgba(0, 0, 0, 0.8);
+                }
+            }
+            &-text {
+                margin: 24px 0 0 0;
+                width: 428px;
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 26px;
+                color: rgba(0, 0, 0, 0.7);
+            }
+            &-line {
+                margin: 63px 0 21px 0;
+                width: 100%;
+                height: 0px;
+                border-top: 1px solid #7C7C7C;
+            }
+            &-client {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                &-photo {
+                    width: 73px;
+                    height: 73px;
+                    background: #C4C4C4;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                &-name {
+                    margin: 0 0 0 25px;
+                    font-family: TT Norms;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 22px;
+                    line-height: 42px;
+                    letter-spacing: 0.09em;
+                    color: #000000;
+                }
+            }
+            &-message {
+                margin: 28px 0 0 0;
+                height: 227px;
+                width: 100%;
+                padding: 15px 19px;
+                resize: none;
+                border: 1px solid #D0D0D0;
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 26px;
+                color: rgba(0, 0, 0, 1);
+                &::placeholder {
+                    font-family: TT Norms;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 26px;
+                    color: rgba(0, 0, 0, 0.7);
+                }
+            }
+            &-controls {
+                margin: 21px 0 0 0;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                width: 100%;
+            }
+            &-star {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                & p {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 22px;
+                    line-height: 42px;
+                    letter-spacing: 0.09em;
+                    color: #000000;
+                }
+            }
+            &-stars {
+                margin: 21px 0 0 0;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                & svg {
+                    cursor: pointer;
+                    margin: 0 13px 0 0;
+                }
+            }
+            &-btn {
+                margin: auto 0 0 0;
+                padding: 0 81px;
+                height: 52px;
+                background: #4C4C4C;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                cursor: pointer;
+                & p {
+                    font-family: TT Norms;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+            }
+        }
+        &-product {
+            width: 444px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            &-photo {
+                width: 320.85px;
+                height: 459.06px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #F2F2F2;
+                border-radius: 20px;
+            }
+            &-price {
+                margin: 43px 0 0 0;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                &-last {
+                    font-family: TT Norms;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 45px;
+                    line-height: 53px;
+                    color: #000000;
+                }
+                &-prev {
+                    margin: 0 0 0 30px;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 24px;
+                    text-decoration-line: line-through;
+                    color: #636363;
+                }
+                &-add {
+                    margin: 0 0 0 19px;
+                    padding: 0 11px;
+                    height: 23.31px;
+                    background: #FF7A00;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    & p {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+            &-controls {
+                margin: 23px 0 0 0;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+            }
+            &-count {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 13px;
+                height: 52px;
+                background: #EBEBEB;
+                border-radius: 10px;
+                &-minus {
+                    cursor: pointer;
+                }
+                &-plus {
+                    cursor: pointer;
+                }
+                &-sum {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 22px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #000000;
+                    margin: 0 41px;
+                }
+            }
+            &-btn {
+                margin: 0 0 0 13px;
+                padding: 0 33px 0 22px;
+                height: 52px;
+                background: #D65E54;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                & p {
+                    margin: 0 0 0 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+            }
+            &-heart {
+                width: 61px;
+                height: 52px;
+                border: 1px solid #C4C4C4;
+                cursor: pointer;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 0 0 13px;
+                background: transparent;
+            }
+        }
+    }
+}

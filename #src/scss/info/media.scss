@@ -1,0 +1,19 @@
+@media (max-width: 1300px) {
+    .info-header__block {
+        padding: 0;
+    }
+    .info-header__block-banners {
+        width: 100%;
+    }
+    .info-header__block-description {
+        width: 100%;
+    }
+    .info-header__block-text {
+        width: 100%;
+    }
+}
+@media (max-width: 1050px) {
+    .info-header .containers {
+        padding: 0 30px;
+    }
+}

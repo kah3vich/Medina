@@ -47,18 +47,28 @@ var partSlider = new Swiper(".partSlider", {
     mousewheel: true,
     slidesPerView: 5,
     spaceBetween: 0,
-});
-var indexShopSlider = new Swiper(".indexShopSlider", {
-    navigation: {
-        nextEl: ".shop__block-slider .swiper-controls .swiper-button-next",
-        prevEl: ".shop__block-slider .swiper-controls .swiper-button-prev",
-    },
-    pagination: {
-        el: ".shop__block-slider .swiper-controls .swiper-pagination",
-    },
-    mousewheel: true,
-    slidesPerView: 5,
-    spaceBetween: 40,
+    breakpoints: {
+        1250: {
+            slidesPerView: 5,
+            spaceBetweenSlides: 0
+        },
+        1000: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 0
+        },
+        890: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 0
+        },
+        550: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 0
+        },
+        0: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 0
+        }
+    }
 });
 var indexHeaderSlider = new Swiper(".indexHeaderSlider", {
     navigation: {
@@ -289,3 +299,74 @@ $(function() {
         $('#city option:nth-child(1)').html(valueElement)
     })
 })
+
+
+
+var shopSlider_1 = new Swiper(".shopSlider-1", {
+    navigation: {
+        nextEl: "#indexShopElement-1 .swiper-controls .swiper-button-next",
+        prevEl: "#indexShopElement-1 .swiper-controls .swiper-button-prev",
+    },
+    pagination: {
+        el: "#indexShopElement-1 .swiper-controls .swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
+    slidesPerView: 5,
+    spaceBetween: 40,
+});
+var shopSlider_2 = new Swiper(".shopSlider-2", {
+    navigation: {
+        nextEl: "#indexShopElement-2 .swiper-controls .swiper-button-next",
+        prevEl: "#indexShopElement-2 .swiper-controls .swiper-button-prev",
+    },
+    pagination: {
+        el: "#indexShopElement-2 .swiper-controls .swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
+    slidesPerView: 5,
+    spaceBetween: 40,
+});
+
+var shopSlider_3 = new Swiper(".shopSlider-3", {
+    navigation: {
+        nextEl: "#indexShopElement-3 .swiper-controls .swiper-button-next",
+        prevEl: "#indexShopElement-3 .swiper-controls .swiper-button-prev",
+    },
+    pagination: {
+        el: "#indexShopElement-3 .swiper-controls .swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
+    slidesPerView: 5,
+    spaceBetween: 40,
+});
+
+var shopSlider_4 = new Swiper(".shopSlider-4", {
+    navigation: {
+        nextEl: "#indexShopElement-4 .swiper-controls .swiper-button-next",
+        prevEl: "#indexShopElement-4 .swiper-controls .swiper-button-prev",
+    },
+    pagination: {
+        el: "#indexShopElement-4 .swiper-controls .swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
+    slidesPerView: 5,
+    spaceBetween: 40,
+});
+
+var shopSlider_5 = new Swiper(".shopSlider-5", {
+    navigation: {
+        nextEl: "#indexShopElement-5 .swiper-controls .swiper-button-next",
+        prevEl: "#indexShopElement-5 .swiper-controls .swiper-button-prev",
+    },
+    pagination: {
+        el: "#indexShopElement-5 .swiper-controls .swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
+    slidesPerView: 5,
+    spaceBetween: 40,
+});

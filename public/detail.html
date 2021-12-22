@@ -25,7 +25,7 @@
   <header class="header"> 
     <div class="containers"> 
       <div class="header__block"> 
-        <div class="header__block-logo"> </div><a class="header__block-logos" href="index.html"><img src="./img/index/logo.png" alt="img"></a>
+        <div class="header__block-logo"> </div><a class="header__block-logos" href="index.html"><img src="./img/index/logo.png" alt="img"></a><a class="header__block-lg" href="index.html"><img src="./img/index/logos.png" alt="img"></a>
         <ul class="header__block-list">
           <li class="header__block-list-item"><a href="catalog.html">Книги </a></li>
           <li class="header__block-list-item"> <a href="#">Проекты </a></li>
@@ -67,6 +67,13 @@
             </div>
           </li>
         </ul>
+        <div class="header__block-burger">
+           <svg viewBox="0 0 100 80" width="100%" height="18">
+<rect width="100" height="10" fill="#fff"></rect>
+<rect y="30" width="100" height="10" fill="#fff"></rect>
+<rect y="60" width="100" height="10" fill="#fff"></rect>
+</svg>
+        </div>
       </div>
     </div>
   </header>
@@ -147,7 +154,7 @@
           </div>
         </div>
         <div class="det-header__photo"> 
-          <div class="det-header__photo-items"> </div>
+          <div class="det-header__photo-items"> <img src="./img/detail/books.png" alt="img"></div>
           <div class="det-header__photo-items"> </div>
           <div class="det-header__photo-items"> </div>
           <div class="det-header__photo-items"> </div>
@@ -220,14 +227,12 @@
               </div>
             </div>
           </div>
-          <div class="det-content__block-reviews">Отзывы</div>
+          <div class="det-content__block-reviews">Рецензии</div>
           <div class="det-content__block-review">
-            <div class="det-content__block-review-active"> 
-              <div class="det-content__block-review-active-rating"> 
-                <div class="det-content__block-review-active-rating-number">
-                  <p>4.7 </p><span>из 5</span>
-                </div>
-                <div class="det-content__block-review-active-rating-star">
+            <div class="det-content__block-review-items"> 
+              <div class="det-content__block-review-items-rating"> 
+                <p>4.0</p>
+                <div class="det-content__block-review-items-rating-star">
                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M9.14827 1.15019L6.79408 5.72169L1.5269 6.45713C0.582342 6.58834 0.203797 7.70359 0.888783 8.34236L4.69947 11.8987L3.79817 16.9225C3.63594 17.8306 4.63458 18.5108 5.47098 18.0861L10.183 15.7141L14.8949 18.0861C15.7314 18.5074 16.73 17.8306 16.5678 16.9225L15.6665 11.8987L19.4771 8.34236C20.1621 7.70359 19.7836 6.58834 18.839 6.45713L13.5718 5.72169L11.2177 1.15019C10.7958 0.335332 9.57368 0.324974 9.14827 1.15019Z" fill="#FF7A00"/>
 </svg>
@@ -245,70 +250,20 @@
 </svg>
                 </div>
               </div>
-              <div class="det-content__block-review-active-text"> 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil similique commodi harum optio distinctio voluptatem recusandae iure ipsam architecto corrupti.</p>
-              </div>
-              <div class="det-content__block-reviews-active-wrapper"> 
-                <div class="det-content__block-review-active-status"> 
-                  <div class="det-content__block-review-active-status-star">
-                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.24897 0.452219L4.54019 3.81352L0.717021 4.35428C0.0314143 4.45075 -0.243352 5.27076 0.253844 5.74043L3.01982 8.35534L2.36562 12.0492C2.24786 12.7169 2.97272 13.217 3.57982 12.9048L7 11.1607L10.4202 12.9048C11.0273 13.2145 11.7521 12.7169 11.6344 12.0492L10.9802 8.35534L13.7462 5.74043C14.2434 5.27076 13.9686 4.45075 13.283 4.35428L9.45981 3.81352L7.75103 0.452219C7.44486 -0.146926 6.55776 -0.154542 6.24897 0.452219Z" fill="#FF7A00"/>
-</svg>
+              <div class="det-content__block-review-items-info">
+                <div class="det-content__block-review-items-people"> 
+                  <div class="det-content__block-review-items-photo"> </div>
+                  <div class="det-content__block-review-items-name"> 
+                    <h3>Михаил Кутепов</h3>
+                    <p>04.12.2022</p>
                   </div>
-                  <div class="det-content__block-review-active-status-number">5</div>
-                  <div class="det-content__block-review-active-status-line"> 
-                    <div class="det-content__block-review-active-status-lines" id="detailLines-1"></div>
-                  </div>
-                  <div class="det-content__block-review-active-status-sum" id="detailLineSum-1">86%</div>
                 </div>
-                <div class="det-content__block-review-active-status"> 
-                  <div class="det-content__block-review-active-status-star">
-                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.24897 0.452219L4.54019 3.81352L0.717021 4.35428C0.0314143 4.45075 -0.243352 5.27076 0.253844 5.74043L3.01982 8.35534L2.36562 12.0492C2.24786 12.7169 2.97272 13.217 3.57982 12.9048L7 11.1607L10.4202 12.9048C11.0273 13.2145 11.7521 12.7169 11.6344 12.0492L10.9802 8.35534L13.7462 5.74043C14.2434 5.27076 13.9686 4.45075 13.283 4.35428L9.45981 3.81352L7.75103 0.452219C7.44486 -0.146926 6.55776 -0.154542 6.24897 0.452219Z" fill="#FF7A00"/>
-</svg>
-                  </div>
-                  <div class="det-content__block-review-active-status-number">4</div>
-                  <div class="det-content__block-review-active-status-line"> 
-                    <div class="det-content__block-review-active-status-lines" id="detailLines-2"></div>
-                  </div>
-                  <div class="det-content__block-review-active-status-sum" id="detailLineSum-2">70%</div>
+                <div class="det-content__block-review-items-text"> 
+                  <p>Марию Воронову все очень хорошо знают по романом "Медицинской Саги", где занимательно и интересно описана жизнь врачей разной практики и медсестер, а также их близких и друзей. Каждая книга посвящена одному герою, ну а потом на страницах других романах этот герой встречается вновь. Но сравнительно недавно М. Воронова начала новую серию романов "Суд сердца", в которых отправила своих героев в совершенно отличную от медицины среду, а именно окунула их в сложные перипетии судебно-правовой системы.</p>
                 </div>
-                <div class="det-content__block-review-active-status"> 
-                  <div class="det-content__block-review-active-status-star">
-                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.24897 0.452219L4.54019 3.81352L0.717021 4.35428C0.0314143 4.45075 -0.243352 5.27076 0.253844 5.74043L3.01982 8.35534L2.36562 12.0492C2.24786 12.7169 2.97272 13.217 3.57982 12.9048L7 11.1607L10.4202 12.9048C11.0273 13.2145 11.7521 12.7169 11.6344 12.0492L10.9802 8.35534L13.7462 5.74043C14.2434 5.27076 13.9686 4.45075 13.283 4.35428L9.45981 3.81352L7.75103 0.452219C7.44486 -0.146926 6.55776 -0.154542 6.24897 0.452219Z" fill="#FF7A00"/>
-</svg>
-                  </div>
-                  <div class="det-content__block-review-active-status-number">3</div>
-                  <div class="det-content__block-review-active-status-line"> 
-                    <div class="det-content__block-review-active-status-lines" id="detailLines-3"></div>
-                  </div>
-                  <div class="det-content__block-review-active-status-sum" id="detailLineSum-3">55%</div>
-                </div>
-                <div class="det-content__block-review-active-status"> 
-                  <div class="det-content__block-review-active-status-star">
-                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.24897 0.452219L4.54019 3.81352L0.717021 4.35428C0.0314143 4.45075 -0.243352 5.27076 0.253844 5.74043L3.01982 8.35534L2.36562 12.0492C2.24786 12.7169 2.97272 13.217 3.57982 12.9048L7 11.1607L10.4202 12.9048C11.0273 13.2145 11.7521 12.7169 11.6344 12.0492L10.9802 8.35534L13.7462 5.74043C14.2434 5.27076 13.9686 4.45075 13.283 4.35428L9.45981 3.81352L7.75103 0.452219C7.44486 -0.146926 6.55776 -0.154542 6.24897 0.452219Z" fill="#FF7A00"/>
-</svg>
-                  </div>
-                  <div class="det-content__block-review-active-status-number">2</div>
-                  <div class="det-content__block-review-active-status-line"> 
-                    <div class="det-content__block-review-active-status-lines" id="detailLines-4"></div>
-                  </div>
-                  <div class="det-content__block-review-active-status-sum" id="detailLineSum-4">30%</div>
-                </div>
-                <div class="det-content__block-review-active-status"> 
-                  <div class="det-content__block-review-active-status-star">
-                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.24897 0.452219L4.54019 3.81352L0.717021 4.35428C0.0314143 4.45075 -0.243352 5.27076 0.253844 5.74043L3.01982 8.35534L2.36562 12.0492C2.24786 12.7169 2.97272 13.217 3.57982 12.9048L7 11.1607L10.4202 12.9048C11.0273 13.2145 11.7521 12.7169 11.6344 12.0492L10.9802 8.35534L13.7462 5.74043C14.2434 5.27076 13.9686 4.45075 13.283 4.35428L9.45981 3.81352L7.75103 0.452219C7.44486 -0.146926 6.55776 -0.154542 6.24897 0.452219Z" fill="#FF7A00"/>
-</svg>
-                  </div>
-                  <div class="det-content__block-review-active-status-number">1</div>
-                  <div class="det-content__block-review-active-status-line"> 
-                    <div class="det-content__block-review-active-status-lines" id="detailLines-5"></div>
-                  </div>
-                  <div class="det-content__block-review-active-status-sum" id="detailLineSum-5">15%</div>
-                </div>
+                <button class="det-content__block-review-items-btn">
+                  <p>Читать полностью</p>
+                </button>
               </div>
             </div>
             <div class="det-content__block-review-items"> 
@@ -341,8 +296,11 @@
                   </div>
                 </div>
                 <div class="det-content__block-review-items-text"> 
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p>Марию Воронову все очень хорошо знают по романом "Медицинской Саги", где занимательно и интересно описана жизнь врачей разной практики и медсестер, а также их близких и друзей. Каждая книга посвящена одному герою, ну а потом на страницах других романах этот герой встречается вновь. Но сравнительно недавно М. Воронова начала новую серию романов "Суд сердца", в которых отправила своих героев в совершенно отличную от медицины среду, а именно окунула их в сложные перипетии судебно-правовой системы.</p>
                 </div>
+                <button class="det-content__block-review-items-btn">
+                  <p>Читать полностью</p>
+                </button>
               </div>
             </div>
             <div class="det-content__block-review-items"> 
@@ -375,78 +333,16 @@
                   </div>
                 </div>
                 <div class="det-content__block-review-items-text"> 
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p>Марию Воронову все очень хорошо знают по романом "Медицинской Саги", где занимательно и интересно описана жизнь врачей разной практики и медсестер, а также их близких и друзей. Каждая книга посвящена одному герою, ну а потом на страницах других романах этот герой встречается вновь. Но сравнительно недавно М. Воронова начала новую серию романов "Суд сердца", в которых отправила своих героев в совершенно отличную от медицины среду, а именно окунула их в сложные перипетии судебно-правовой системы.</p>
                 </div>
+                <button class="det-content__block-review-items-btn">
+                  <p>Читать полностью</p>
+                </button>
               </div>
             </div>
-            <div class="det-content__block-review-items"> 
-              <div class="det-content__block-review-items-rating"> 
-                <p>4.0</p>
-                <div class="det-content__block-review-items-rating-star">
-                   <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.14827 1.15019L6.79408 5.72169L1.5269 6.45713C0.582342 6.58834 0.203797 7.70359 0.888783 8.34236L4.69947 11.8987L3.79817 16.9225C3.63594 17.8306 4.63458 18.5108 5.47098 18.0861L10.183 15.7141L14.8949 18.0861C15.7314 18.5074 16.73 17.8306 16.5678 16.9225L15.6665 11.8987L19.4771 8.34236C20.1621 7.70359 19.7836 6.58834 18.839 6.45713L13.5718 5.72169L11.2177 1.15019C10.7958 0.335332 9.57368 0.324974 9.14827 1.15019Z" fill="#FF7A00"/>
-</svg>
-<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.14827 1.15019L6.79408 5.72169L1.5269 6.45713C0.582342 6.58834 0.203797 7.70359 0.888783 8.34236L4.69947 11.8987L3.79817 16.9225C3.63594 17.8306 4.63458 18.5108 5.47098 18.0861L10.183 15.7141L14.8949 18.0861C15.7314 18.5074 16.73 17.8306 16.5678 16.9225L15.6665 11.8987L19.4771 8.34236C20.1621 7.70359 19.7836 6.58834 18.839 6.45713L13.5718 5.72169L11.2177 1.15019C10.7958 0.335332 9.57368 0.324974 9.14827 1.15019Z" fill="#FF7A00"/>
-</svg>
-<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.14827 1.15019L6.79408 5.72169L1.5269 6.45713C0.582342 6.58834 0.203797 7.70359 0.888783 8.34236L4.69947 11.8987L3.79817 16.9225C3.63594 17.8306 4.63458 18.5108 5.47098 18.0861L10.183 15.7141L14.8949 18.0861C15.7314 18.5074 16.73 17.8306 16.5678 16.9225L15.6665 11.8987L19.4771 8.34236C20.1621 7.70359 19.7836 6.58834 18.839 6.45713L13.5718 5.72169L11.2177 1.15019C10.7958 0.335332 9.57368 0.324974 9.14827 1.15019Z" fill="#FF7A00"/>
-</svg>
-<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.14827 1.15019L6.79408 5.72169L1.5269 6.45713C0.582342 6.58834 0.203797 7.70359 0.888783 8.34236L4.69947 11.8987L3.79817 16.9225C3.63594 17.8306 4.63458 18.5108 5.47098 18.0861L10.183 15.7141L14.8949 18.0861C15.7314 18.5074 16.73 17.8306 16.5678 16.9225L15.6665 11.8987L19.4771 8.34236C20.1621 7.70359 19.7836 6.58834 18.839 6.45713L13.5718 5.72169L11.2177 1.15019C10.7958 0.335332 9.57368 0.324974 9.14827 1.15019Z" fill="#FF7A00"/>
-</svg>
-<svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.83219 1.15019L7.37991 5.72169L1.89326 6.45713C0.909341 6.58834 0.515023 7.70359 1.22855 8.34236L5.19801 11.8987L4.25916 16.9225C4.09017 17.8306 5.13042 18.5108 6.00167 18.0861L10.91 15.7141L15.8183 18.0861C16.6896 18.5074 17.7298 17.8306 17.5608 16.9225L16.622 11.8987L20.5914 8.34236C21.305 7.70359 20.9106 6.58834 19.9267 6.45713L14.4401 5.72169L11.9878 1.15019C11.5484 0.335332 10.2753 0.324974 9.83219 1.15019Z" fill="#E7E7E7"/>
-</svg>
-                </div>
-              </div>
-              <div class="det-content__block-review-items-info">
-                <div class="det-content__block-review-items-people"> 
-                  <div class="det-content__block-review-items-photo"> </div>
-                  <div class="det-content__block-review-items-name"> 
-                    <h3>Михаил Кутепов</h3>
-                    <p>04.12.2022</p>
-                  </div>
-                </div>
-                <div class="det-content__block-review-items-text"> 
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-              </div>
-            </div>
-            <div class="det-content__block-review-items"> 
-              <div class="det-content__block-review-items-rating"> 
-                <p>4.0</p>
-                <div class="det-content__block-review-items-rating-star">
-                   <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.14827 1.15019L6.79408 5.72169L1.5269 6.45713C0.582342 6.58834 0.203797 7.70359 0.888783 8.34236L4.69947 11.8987L3.79817 16.9225C3.63594 17.8306 4.63458 18.5108 5.47098 18.0861L10.183 15.7141L14.8949 18.0861C15.7314 18.5074 16.73 17.8306 16.5678 16.9225L15.6665 11.8987L19.4771 8.34236C20.1621 7.70359 19.7836 6.58834 18.839 6.45713L13.5718 5.72169L11.2177 1.15019C10.7958 0.335332 9.57368 0.324974 9.14827 1.15019Z" fill="#FF7A00"/>
-</svg>
-<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.14827 1.15019L6.79408 5.72169L1.5269 6.45713C0.582342 6.58834 0.203797 7.70359 0.888783 8.34236L4.69947 11.8987L3.79817 16.9225C3.63594 17.8306 4.63458 18.5108 5.47098 18.0861L10.183 15.7141L14.8949 18.0861C15.7314 18.5074 16.73 17.8306 16.5678 16.9225L15.6665 11.8987L19.4771 8.34236C20.1621 7.70359 19.7836 6.58834 18.839 6.45713L13.5718 5.72169L11.2177 1.15019C10.7958 0.335332 9.57368 0.324974 9.14827 1.15019Z" fill="#FF7A00"/>
-</svg>
-<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.14827 1.15019L6.79408 5.72169L1.5269 6.45713C0.582342 6.58834 0.203797 7.70359 0.888783 8.34236L4.69947 11.8987L3.79817 16.9225C3.63594 17.8306 4.63458 18.5108 5.47098 18.0861L10.183 15.7141L14.8949 18.0861C15.7314 18.5074 16.73 17.8306 16.5678 16.9225L15.6665 11.8987L19.4771 8.34236C20.1621 7.70359 19.7836 6.58834 18.839 6.45713L13.5718 5.72169L11.2177 1.15019C10.7958 0.335332 9.57368 0.324974 9.14827 1.15019Z" fill="#FF7A00"/>
-</svg>
-<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.14827 1.15019L6.79408 5.72169L1.5269 6.45713C0.582342 6.58834 0.203797 7.70359 0.888783 8.34236L4.69947 11.8987L3.79817 16.9225C3.63594 17.8306 4.63458 18.5108 5.47098 18.0861L10.183 15.7141L14.8949 18.0861C15.7314 18.5074 16.73 17.8306 16.5678 16.9225L15.6665 11.8987L19.4771 8.34236C20.1621 7.70359 19.7836 6.58834 18.839 6.45713L13.5718 5.72169L11.2177 1.15019C10.7958 0.335332 9.57368 0.324974 9.14827 1.15019Z" fill="#FF7A00"/>
-</svg>
-<svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.83219 1.15019L7.37991 5.72169L1.89326 6.45713C0.909341 6.58834 0.515023 7.70359 1.22855 8.34236L5.19801 11.8987L4.25916 16.9225C4.09017 17.8306 5.13042 18.5108 6.00167 18.0861L10.91 15.7141L15.8183 18.0861C16.6896 18.5074 17.7298 17.8306 17.5608 16.9225L16.622 11.8987L20.5914 8.34236C21.305 7.70359 20.9106 6.58834 19.9267 6.45713L14.4401 5.72169L11.9878 1.15019C11.5484 0.335332 10.2753 0.324974 9.83219 1.15019Z" fill="#E7E7E7"/>
-</svg>
-                </div>
-              </div>
-              <div class="det-content__block-review-items-info">
-                <div class="det-content__block-review-items-people"> 
-                  <div class="det-content__block-review-items-photo"> </div>
-                  <div class="det-content__block-review-items-name"> 
-                    <h3>Михаил Кутепов</h3>
-                    <p>04.12.2022</p>
-                  </div>
-                </div>
-                <div class="det-content__block-review-items-text"> 
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-              </div>
-            </div>
+          </div>
+          <div class="det-content__block-btns"> 
+            <p>Еще рецензии</p>
           </div>
         </div>
         <div class="det-content__rec"> 
@@ -548,18 +444,18 @@
     </div>
   </section>
   <section class="shop"> 
-    <div class="shop__title">Категории</div>
+    <div class="shop__title">Рубрики</div>
     <div class="shop__block">
       <div class="containers"> 
         <ul class="shop__block-list">
-          <li class="shop__block-list-item" id="indexShopButton-1"> История</li>
-          <li class="shop__block-list-item shop__block-list-item-active" id="indexShopButton-2">Искусство</li>
+          <li class="shop__block-list-item shop__block-list-item-active" id="indexShopButton-1"> История</li>
+          <li class="shop__block-list-item" id="indexShopButton-2">Искусство</li>
           <li class="shop__block-list-item" id="indexShopButton-3">Журналы</li>
           <li class="shop__block-list-item" id="indexShopButton-4">Религиоведение</li>
           <li class="shop__block-list-item" id="indexShopButton-5">Возрождение и обновление</li>
         </ul>
         <div class="shop__block-slider" id="indexShopElement-1">
-          <div class="swiper indexShopSlider">
+          <div class="swiper shopSlider-1">
             <div class="swiper-wrapper">
               <div class="swiper-slide"> 
                 <div class="shop__block-slider-item">
@@ -681,69 +577,9 @@
                   <div class="shop__block-slider-add">Ахун Мансур</div>
                 </div>
               </div>
-              <div class="swiper-slide"> 
-                <div class="shop__block-slider-item">
-                  <div class="shop__block-slider-img"> <img src="./img/index/shop-2.png" alt="img"></div>
-                  <div class="shop__block-slider-star"><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-                  </div>
-                  <div class="shop__block-slider-title">Успеть до восхода</div>
-                  <div class="shop__block-slider-add">Ахун Мансур</div>
-                </div>
-              </div>
-              <div class="swiper-slide"> 
-                <div class="shop__block-slider-item">
-                  <div class="shop__block-slider-img"> <img src="./img/index/shop-3.png" alt="img"></div>
-                  <div class="shop__block-slider-star"><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-                  </div>
-                  <div class="shop__block-slider-title">Успеть до восхода</div>
-                  <div class="shop__block-slider-add">Ахун Мансур</div>
-                </div>
-              </div>
-              <div class="swiper-slide"> 
-                <div class="shop__block-slider-item">
-                  <div class="shop__block-slider-img"> <img src="./img/index/shop-4.png" alt="img"></div>
-                  <div class="shop__block-slider-star"><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-                  </div>
-                  <div class="shop__block-slider-title">Успеть до восхода</div>
-                  <div class="shop__block-slider-add">Ахун Мансур</div>
-                </div>
-              </div>
             </div>
           </div>
-          <div class="swiper-controls">
+          <div class="swiper-controls"> 
             <div class="swiper-button-next">
               <div class="swiper-button-next-arrow"></div>
             </div>
@@ -754,7 +590,7 @@
           </div>
         </div>
         <div class="shop__block-slider display-n" id="indexShopElement-2">
-          <div class="swiper indexShopSlider">
+          <div class="swiper shopSlider-2">
             <div class="swiper-wrapper">
               <div class="swiper-slide"> 
                 <div class="shop__block-slider-item">
@@ -876,69 +712,9 @@
                   <div class="shop__block-slider-add">Ахун Мансур</div>
                 </div>
               </div>
-              <div class="swiper-slide"> 
-                <div class="shop__block-slider-item">
-                  <div class="shop__block-slider-img"> <img src="./img/index/shop-2.png" alt="img"></div>
-                  <div class="shop__block-slider-star"><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-                  </div>
-                  <div class="shop__block-slider-title">Успеть до восхода</div>
-                  <div class="shop__block-slider-add">Ахун Мансур</div>
-                </div>
-              </div>
-              <div class="swiper-slide"> 
-                <div class="shop__block-slider-item">
-                  <div class="shop__block-slider-img"> <img src="./img/index/shop-3.png" alt="img"></div>
-                  <div class="shop__block-slider-star"><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-                  </div>
-                  <div class="shop__block-slider-title">Успеть до восхода</div>
-                  <div class="shop__block-slider-add">Ахун Мансур</div>
-                </div>
-              </div>
-              <div class="swiper-slide"> 
-                <div class="shop__block-slider-item">
-                  <div class="shop__block-slider-img"> <img src="./img/index/shop-4.png" alt="img"></div>
-                  <div class="shop__block-slider-star"><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-                  </div>
-                  <div class="shop__block-slider-title">Успеть до восхода</div>
-                  <div class="shop__block-slider-add">Ахун Мансур</div>
-                </div>
-              </div>
             </div>
           </div>
-          <div class="swiper-controls">
+          <div class="swiper-controls"> 
             <div class="swiper-button-next">
               <div class="swiper-button-next-arrow"></div>
             </div>
@@ -949,7 +725,7 @@
           </div>
         </div>
         <div class="shop__block-slider display-n" id="indexShopElement-3">
-          <div class="swiper indexShopSlider">
+          <div class="swiper shopSlider-3">
             <div class="swiper-wrapper">
               <div class="swiper-slide"> 
                 <div class="shop__block-slider-item">
@@ -1071,69 +847,9 @@
                   <div class="shop__block-slider-add">Ахун Мансур</div>
                 </div>
               </div>
-              <div class="swiper-slide"> 
-                <div class="shop__block-slider-item">
-                  <div class="shop__block-slider-img"> <img src="./img/index/shop-2.png" alt="img"></div>
-                  <div class="shop__block-slider-star"><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-                  </div>
-                  <div class="shop__block-slider-title">Успеть до восхода</div>
-                  <div class="shop__block-slider-add">Ахун Мансур</div>
-                </div>
-              </div>
-              <div class="swiper-slide"> 
-                <div class="shop__block-slider-item">
-                  <div class="shop__block-slider-img"> <img src="./img/index/shop-3.png" alt="img"></div>
-                  <div class="shop__block-slider-star"><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-                  </div>
-                  <div class="shop__block-slider-title">Успеть до восхода</div>
-                  <div class="shop__block-slider-add">Ахун Мансур</div>
-                </div>
-              </div>
-              <div class="swiper-slide"> 
-                <div class="shop__block-slider-item">
-                  <div class="shop__block-slider-img"> <img src="./img/index/shop-4.png" alt="img"></div>
-                  <div class="shop__block-slider-star"><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-                  </div>
-                  <div class="shop__block-slider-title">Успеть до восхода</div>
-                  <div class="shop__block-slider-add">Ахун Мансур</div>
-                </div>
-              </div>
             </div>
           </div>
-          <div class="swiper-controls">
+          <div class="swiper-controls"> 
             <div class="swiper-button-next">
               <div class="swiper-button-next-arrow"></div>
             </div>
@@ -1144,7 +860,7 @@
           </div>
         </div>
         <div class="shop__block-slider display-n" id="indexShopElement-4">
-          <div class="swiper indexShopSlider">
+          <div class="swiper shopSlider-4">
             <div class="swiper-wrapper">
               <div class="swiper-slide"> 
                 <div class="shop__block-slider-item">
@@ -1266,69 +982,9 @@
                   <div class="shop__block-slider-add">Ахун Мансур</div>
                 </div>
               </div>
-              <div class="swiper-slide"> 
-                <div class="shop__block-slider-item">
-                  <div class="shop__block-slider-img"> <img src="./img/index/shop-2.png" alt="img"></div>
-                  <div class="shop__block-slider-star"><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-                  </div>
-                  <div class="shop__block-slider-title">Успеть до восхода</div>
-                  <div class="shop__block-slider-add">Ахун Мансур</div>
-                </div>
-              </div>
-              <div class="swiper-slide"> 
-                <div class="shop__block-slider-item">
-                  <div class="shop__block-slider-img"> <img src="./img/index/shop-3.png" alt="img"></div>
-                  <div class="shop__block-slider-star"><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-                  </div>
-                  <div class="shop__block-slider-title">Успеть до восхода</div>
-                  <div class="shop__block-slider-add">Ахун Мансур</div>
-                </div>
-              </div>
-              <div class="swiper-slide"> 
-                <div class="shop__block-slider-item">
-                  <div class="shop__block-slider-img"> <img src="./img/index/shop-4.png" alt="img"></div>
-                  <div class="shop__block-slider-star"><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-                  </div>
-                  <div class="shop__block-slider-title">Успеть до восхода</div>
-                  <div class="shop__block-slider-add">Ахун Мансур</div>
-                </div>
-              </div>
             </div>
           </div>
-          <div class="swiper-controls">
+          <div class="swiper-controls"> 
             <div class="swiper-button-next">
               <div class="swiper-button-next-arrow"></div>
             </div>
@@ -1339,7 +995,7 @@
           </div>
         </div>
         <div class="shop__block-slider display-n" id="indexShopElement-5">
-          <div class="swiper indexShopSlider">
+          <div class="swiper shopSlider-5">
             <div class="swiper-wrapper">
               <div class="swiper-slide"> 
                 <div class="shop__block-slider-item">
@@ -1461,69 +1117,9 @@
                   <div class="shop__block-slider-add">Ахун Мансур</div>
                 </div>
               </div>
-              <div class="swiper-slide"> 
-                <div class="shop__block-slider-item">
-                  <div class="shop__block-slider-img"> <img src="./img/index/shop-2.png" alt="img"></div>
-                  <div class="shop__block-slider-star"><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-                  </div>
-                  <div class="shop__block-slider-title">Успеть до восхода</div>
-                  <div class="shop__block-slider-add">Ахун Мансур</div>
-                </div>
-              </div>
-              <div class="swiper-slide"> 
-                <div class="shop__block-slider-item">
-                  <div class="shop__block-slider-img"> <img src="./img/index/shop-3.png" alt="img"></div>
-                  <div class="shop__block-slider-star"><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-                  </div>
-                  <div class="shop__block-slider-title">Успеть до восхода</div>
-                  <div class="shop__block-slider-add">Ахун Мансур</div>
-                </div>
-              </div>
-              <div class="swiper-slide"> 
-                <div class="shop__block-slider-item">
-                  <div class="shop__block-slider-img"> <img src="./img/index/shop-4.png" alt="img"></div>
-                  <div class="shop__block-slider-star"><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.50965 0.452219L5.71136 3.81352L1.68793 4.35428C0.966409 4.45075 0.677251 5.27076 1.20049 5.74043L4.11135 8.35534L3.42288 12.0492C3.29895 12.7169 4.06178 13.217 4.70068 12.9048L8.30002 11.1607L11.8994 12.9048C12.5383 13.2145 13.3011 12.7169 13.1772 12.0492L12.4887 8.35534L15.3995 5.74043C15.9228 5.27076 15.6336 4.45075 14.9121 4.35428L10.8887 3.81352L9.09038 0.452219C8.76818 -0.146926 7.83461 -0.154542 7.50965 0.452219Z" fill="#FF7A00"/>
-</svg>
-                  </div>
-                  <div class="shop__block-slider-title">Успеть до восхода</div>
-                  <div class="shop__block-slider-add">Ахун Мансур</div>
-                </div>
-              </div>
             </div>
           </div>
-          <div class="swiper-controls">
+          <div class="swiper-controls"> 
             <div class="swiper-button-next">
               <div class="swiper-button-next-arrow"></div>
             </div>
@@ -1938,6 +1534,7 @@
         </ul>
       </div>
     </div>
+    <div class="footer__line"></div>
     <div class="footer__add">
       <div class="footer__add-rights">Copyright © 2021. Издательски дом Медина. Все права защищены</div>
       <div class="footer__add-create"> <a href="https://bpump.ru">Сделано в BUSINESS PUMP</a></div>

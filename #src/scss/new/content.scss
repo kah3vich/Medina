@@ -223,5 +223,28 @@
                 }
             }
         }
+        &-btn {
+            margin: 50px auto 0 auto;
+            padding: 0 71px;
+            height: 52px;
+            border: 2px solid #D0D0D0;
+            display: flex;
+            background: transparent;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 26px;
+            & p {
+                font-family: TT Norms;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                text-align: center;
+                text-transform: lowercase;
+                color: #1E1D1D;
+            }
+        }
     }
 }
