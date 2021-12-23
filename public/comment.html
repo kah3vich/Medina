@@ -28,7 +28,9 @@
         <div class="header__block-logo"> </div><a class="header__block-logos" href="index.html"><img src="./img/index/logo.png" alt="img"></a><a class="header__block-lg" href="index.html"><img src="./img/index/logos.png" alt="img"></a>
         <ul class="header__block-list">
           <li class="header__block-list-item"><a href="catalog.html">Книги </a></li>
-          <li class="header__block-list-item"> <a href="#">Проекты </a></li>
+          <li class="header__block-list-item" id="headerGalleryMenu"><a href="#">Проекты </a>
+            <div class="header__block-list-item-add display-n"> <a href="gallery.html">Фотоархив</a></div>
+          </li>
           <li class="header__block-list-item"> <a href="info.html">Об издательстве </a></li>
           <li class="header__block-list-item"> <a href="new.html">Новости </a></li>
           <li class="header__block-list-item"> <a href="contact.html">Контакты </a></li>
@@ -79,16 +81,11 @@
   </header>
   <section class="comment-review">
     <div class="containers"> 
-      <div class="comment-review__title">Написать рецензию на товар «История Чингиз-хан»</div>
+      <div class="comment-review__title">Добавить отзыв</div>
       <div class="comment-review__block"> 
         <div class="comment-review__block-content"> 
           <div class="comment-review__block-content-title">История Чингиз-хан</div>
           <div class="comment-review__block-content-type">Биография</div>
-          <div class="comment-review__block-content-people"> 
-            <div class="comment-review__block-content-people-photo"> </div>
-            <div class="comment-review__block-content-people-name">Ахун Мансур</div>
-          </div>
-          <div class="comment-review__block-content-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
           <div class="comment-review__block-content-line"> </div>
           <div class="comment-review__block-content-client"> 
             <div class="comment-review__block-content-client-photo"> </div>
@@ -96,26 +93,6 @@
           </div>
           <textarea class="comment-review__block-content-message" placeholder="Ваша рецензия ..."></textarea>
           <div class="comment-review__block-content-controls"> 
-            <div class="comment-review__block-content-star"> 
-              <p>Ваша оценка</p>
-              <div class="comment-review__block-content-stars">
-                 <svg width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M14.7297 1.04358L10.7019 8.80044L1.69012 10.0483C0.0740479 10.271 -0.573615 12.1633 0.598346 13.2472L7.11815 19.2816L5.57609 27.8059C5.29852 29.3467 7.00712 30.5009 8.43815 29.7803L16.5 25.7554L24.5619 29.7803C25.9929 30.495 27.7015 29.3467 27.4239 27.8059L25.8819 19.2816L32.4017 13.2472C33.5736 12.1633 32.926 10.271 31.3099 10.0483L22.2981 8.80044L18.2703 1.04358C17.5486 -0.339059 15.4576 -0.356635 14.7297 1.04358Z" fill="#FF7A00"/>
-</svg>
-<svg width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M14.7297 1.04358L10.7019 8.80044L1.69012 10.0483C0.0740479 10.271 -0.573615 12.1633 0.598346 13.2472L7.11815 19.2816L5.57609 27.8059C5.29852 29.3467 7.00712 30.5009 8.43815 29.7803L16.5 25.7554L24.5619 29.7803C25.9929 30.495 27.7015 29.3467 27.4239 27.8059L25.8819 19.2816L32.4017 13.2472C33.5736 12.1633 32.926 10.271 31.3099 10.0483L22.2981 8.80044L18.2703 1.04358C17.5486 -0.339059 15.4576 -0.356635 14.7297 1.04358Z" fill="#E7E7E7"/>
-</svg>
-<svg width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M14.7297 1.04358L10.7019 8.80044L1.69012 10.0483C0.0740479 10.271 -0.573615 12.1633 0.598346 13.2472L7.11815 19.2816L5.57609 27.8059C5.29852 29.3467 7.00712 30.5009 8.43815 29.7803L16.5 25.7554L24.5619 29.7803C25.9929 30.495 27.7015 29.3467 27.4239 27.8059L25.8819 19.2816L32.4017 13.2472C33.5736 12.1633 32.926 10.271 31.3099 10.0483L22.2981 8.80044L18.2703 1.04358C17.5486 -0.339059 15.4576 -0.356635 14.7297 1.04358Z" fill="#E7E7E7"/>
-</svg>
-<svg width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M14.7297 1.04358L10.7019 8.80044L1.69012 10.0483C0.0740479 10.271 -0.573615 12.1633 0.598346 13.2472L7.11815 19.2816L5.57609 27.8059C5.29852 29.3467 7.00712 30.5009 8.43815 29.7803L16.5 25.7554L24.5619 29.7803C25.9929 30.495 27.7015 29.3467 27.4239 27.8059L25.8819 19.2816L32.4017 13.2472C33.5736 12.1633 32.926 10.271 31.3099 10.0483L22.2981 8.80044L18.2703 1.04358C17.5486 -0.339059 15.4576 -0.356635 14.7297 1.04358Z" fill="#E7E7E7"/>
-</svg>
-<svg width="33" height="30" viewBox="0 0 33 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M14.7297 1.04358L10.7019 8.80044L1.69012 10.0483C0.0740479 10.271 -0.573615 12.1633 0.598346 13.2472L7.11815 19.2816L5.57609 27.8059C5.29852 29.3467 7.00712 30.5009 8.43815 29.7803L16.5 25.7554L24.5619 29.7803C25.9929 30.495 27.7015 29.3467 27.4239 27.8059L25.8819 19.2816L32.4017 13.2472C33.5736 12.1633 32.926 10.271 31.3099 10.0483L22.2981 8.80044L18.2703 1.04358C17.5486 -0.339059 15.4576 -0.356635 14.7297 1.04358Z" fill="#E7E7E7"/>
-</svg>
-              </div>
-            </div>
             <button class="comment-review__block-content-btn"> 
               <p>Отправить</p>
             </button>

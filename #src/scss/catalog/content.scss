@@ -104,10 +104,67 @@
                     align-items: center;
                     justify-content: center;
                     overflow: hidden;
+                    position: relative;
                     & img {
                         width: 136px;
                         height: 199px;
                         object-fit: cover;
+                    }
+                    &-rating {
+                        padding: 0 7px 0 25px;
+                        height: 21px;
+                        background: #EA9532;
+                        border-radius: 31px;
+                        position: absolute;
+                        top: 9px;
+                        left: 13px;
+                        display: flex;
+                        align-items: center;
+                        display: none;
+                        & p {
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 9px;
+                            line-height: 24px;
+                            color: #FFFFFF;
+                        }
+                    }
+                    &-basket {
+                        position: absolute;
+                        bottom: 10px;
+                        right: 10px;
+                        width: 52px;
+                        height: 52px;
+                        background: #D65E54;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        display: none;
+                    }
+                    &-star {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 21px;
+                        height: 100%;
+                        background: #FF7A00;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+                &-media {
+                    margin: 15px 0 10px 0;
+                    display: none;
+                    & p {
+                        font-family: TT Norms;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 13px;
+                        line-height: 24px;
+                        color: rgba(0, 0, 0, 0.4);
                     }
                 }
                 &-content {

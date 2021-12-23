@@ -28,7 +28,9 @@
         <div class="header__block-logo"> </div><a class="header__block-logos" href="index.html"><img src="./img/index/logo.png" alt="img"></a><a class="header__block-lg" href="index.html"><img src="./img/index/logos.png" alt="img"></a>
         <ul class="header__block-list">
           <li class="header__block-list-item"><a href="catalog.html">Книги </a></li>
-          <li class="header__block-list-item"> <a href="#">Проекты </a></li>
+          <li class="header__block-list-item" id="headerGalleryMenu"><a href="#">Проекты </a>
+            <div class="header__block-list-item-add display-n"> <a href="gallery.html">Фотоархив</a></div>
+          </li>
           <li class="header__block-list-item"> <a href="info.html">Об издательстве </a></li>
           <li class="header__block-list-item"> <a href="new.html">Новости </a></li>
           <li class="header__block-list-item"> <a href="contact.html">Контакты </a></li>
@@ -115,41 +117,44 @@
             </div>
           </div>
           <div class="det-header__block-text"> 
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <p>Марию Воронову все очень хорошо знают по романом "Медицинской Саги", где занимательно и интересно описана жизнь врачей разной практики и медсестер, а также их близких и друзей. Каждая книга посвящена одному герою, ну а потом на страницах других романах этот герой встречается вновь. <br>Но сравнительно недавно М. Воронова начала новую серию романов "Суд сердца", в которых отправила своих героев в совершенно отличную от медицины среду, а именно окунула их в сложные перипетии судебно-правовой системы.</p>
           </div>
+          <button class="det-header__block-add"> 
+            <p>Читать полностью</p>
+          </button>
           <div class="det-header__block-price"> 
             <div class="det-header__block-price-last">₽ 6 800</div>
             <div class="det-header__block-price-prev">₽ 10 800</div>
             <div class="det-header__block-price-add"> 
               <p>2%</p>
             </div>
-          </div>
-          <div class="det-header__block-bay"> 
-            <div class="det-header__block-bay-count"> 
-              <div class="det-header__block-bay-count-minus">
-                 <svg width="15" height="4" viewBox="0 0 15 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="det-header__block-bay"> 
+              <div class="det-header__block-bay-count"> 
+                <div class="det-header__block-bay-count-minus">
+                   <svg width="15" height="4" viewBox="0 0 15 4" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M0 1C0 0.447715 0.447715 0 1 0H14C14.5523 0 15 0.447715 15 1V3C15 3.55228 14.5523 4 14 4H1C0.447715 4 0 3.55228 0 3V1Z" fill="#D65E54"/>
 </svg>
-              </div>
-              <div class="det-header__block-bay-count-sum">1</div>
-              <div class="det-header__block-bay-count-plus">
-                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                </div>
+                <div class="det-header__block-bay-count-sum">1</div>
+                <div class="det-header__block-bay-count-plus">
+                   <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M7.77075 0C8.32304 0 8.77075 0.447715 8.77075 1V4.931C8.77075 5.48328 9.21847 5.931 9.77075 5.931H13.398C13.9503 5.931 14.398 6.37871 14.398 6.931V7.57825C14.398 8.13053 13.9503 8.57825 13.398 8.57825H9.77075C9.21847 8.57825 8.77075 9.02597 8.77075 9.57825V13.5382C8.77075 14.0905 8.32304 14.5382 7.77075 14.5382H6.87758C6.32529 14.5382 5.87758 14.0905 5.87758 13.5382V9.57825C5.87758 9.02597 5.42987 8.57825 4.87758 8.57825H1.2793C0.727013 8.57825 0.279297 8.13054 0.279297 7.57825V6.931C0.279297 6.37872 0.727012 5.931 1.2793 5.931H4.87758C5.42986 5.931 5.87758 5.48328 5.87758 4.931V1C5.87758 0.447715 6.3253 0 6.87758 0H7.77075Z" fill="#D65E54"/>
 </svg>
+                </div>
               </div>
-            </div>
-            <button class="det-header__block-bay-btn"><svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <button class="det-header__block-bay-btn"><svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M25.5171 8.16235H22.5219L18.026 1.41246C17.8472 1.14433 17.5691 0.958242 17.2531 0.89512C16.937 0.831999 16.6088 0.897018 16.3407 1.07588C16.0725 1.25473 15.8865 1.53278 15.8233 1.84884C15.7602 2.1649 15.8252 2.4931 16.0041 2.76122L19.602 8.16235H7.13021L10.7318 2.76122C10.9106 2.4931 10.9756 2.1649 10.9125 1.84884C10.8494 1.53278 10.6633 1.25473 10.3952 1.07588C10.1271 0.897018 9.79887 0.831999 9.4828 0.89512C9.16674 0.958242 8.8887 1.14433 8.70984 1.41246L4.21032 8.16235H1.2151C0.892836 8.16235 0.58377 8.29036 0.355895 8.51824C0.128019 8.74612 0 9.05518 0 9.37745C0 9.69971 0.128019 10.0088 0.355895 10.2367C0.58377 10.4645 0.892836 10.5925 1.2151 10.5925H2.4302V20.3134C2.4302 21.2802 2.81426 22.2073 3.49789 22.891C4.18151 23.5746 5.10871 23.9587 6.0755 23.9587H20.6567C21.6235 23.9587 22.5507 23.5746 23.2343 22.891C23.918 22.2073 24.302 21.2802 24.302 20.3134V10.5925H25.5171C25.8394 10.5925 26.1484 10.4645 26.3763 10.2367C26.6042 10.0088 26.7322 9.69971 26.7322 9.37745C26.7322 9.05518 26.6042 8.74612 26.3763 8.51824C26.1484 8.29036 25.8394 8.16235 25.5171 8.16235ZM21.8718 20.3134C21.8718 20.6356 21.7438 20.9447 21.5159 21.1726C21.288 21.4004 20.979 21.5285 20.6567 21.5285H6.0755C5.75324 21.5285 5.44417 21.4004 5.2163 21.1726C4.98842 20.9447 4.8604 20.6356 4.8604 20.3134V10.5925H21.8718V20.3134Z" fill="white"/>
 <path d="M8.50514 19.7056C8.8274 19.7056 9.13647 19.5776 9.36434 19.3498C9.59222 19.1219 9.72024 18.8128 9.72024 18.4905V13.6301C9.72024 13.3079 9.59222 12.9988 9.36434 12.7709C9.13647 12.5431 8.8274 12.415 8.50514 12.415C8.18287 12.415 7.87381 12.5431 7.64593 12.7709C7.41806 12.9988 7.29004 13.3079 7.29004 13.6301V18.4905C7.29004 18.8128 7.41806 19.1219 7.64593 19.3498C7.87381 19.5776 8.18287 19.7056 8.50514 19.7056Z" fill="white"/>
 <path d="M13.3655 19.7056C13.6878 19.7056 13.9968 19.5776 14.2247 19.3498C14.4526 19.1219 14.5806 18.8128 14.5806 18.4905V13.6301C14.5806 13.3079 14.4526 12.9988 14.2247 12.7709C13.9968 12.5431 13.6878 12.415 13.3655 12.415C13.0432 12.415 12.7342 12.5431 12.5063 12.7709C12.2784 12.9988 12.1504 13.3079 12.1504 13.6301V18.4905C12.1504 18.8128 12.2784 19.1219 12.5063 19.3498C12.7342 19.5776 13.0432 19.7056 13.3655 19.7056Z" fill="white"/>
 <path d="M18.2258 19.7056C18.5481 19.7056 18.8572 19.5776 19.0851 19.3498C19.3129 19.1219 19.441 18.8128 19.441 18.4905V13.6301C19.441 13.3079 19.3129 12.9988 19.0851 12.7709C18.8572 12.5431 18.5481 12.415 18.2258 12.415C17.9036 12.415 17.5945 12.5431 17.3666 12.7709C17.1388 12.9988 17.0107 13.3079 17.0107 13.6301V18.4905C17.0107 18.8128 17.1388 19.1219 17.3666 19.3498C17.5945 19.5776 17.9036 19.7056 18.2258 19.7056Z" fill="white"/>
 </svg>
-              <p>Купить</p>
-            </button>
-            <div class="det-header__block-bay-heart">
-               <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <p>Купить</p>
+              </button>
+              <div class="det-header__block-bay-heart">
+                 <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M22.9806 1.78249C20.3141 -0.379588 16.3485 0.00930724 13.901 2.41213L12.9424 3.35196L11.9838 2.41213C9.54121 0.00930724 5.57072 -0.379588 2.90425 1.78249C-0.151472 4.26401 -0.312044 8.71779 2.42254 11.4077L11.8379 20.6578C12.4461 21.255 13.4339 21.255 14.0421 20.6578L23.4574 11.4077C26.1969 8.71779 26.0363 4.26401 22.9806 1.78249Z" fill="#C4C4C4"/>
 </svg>
+              </div>
             </div>
           </div>
         </div>
@@ -168,7 +173,9 @@
     <div class="containers"> 
       <div class="det-content__wrapper"> 
         <div class="det-content__block"> 
-          <div class="det-content__block-title">Подробная информация</div>
+          <div class="det-content__block-title"> 
+            <p>Подробная информация</p>
+          </div>
           <div class="det-content__block-table"> 
             <div class="det-content__block-table-items"> 
               <div class="det-content__block-table-items-name"> 
@@ -227,29 +234,10 @@
               </div>
             </div>
           </div>
-          <div class="det-content__block-reviews">Рецензии</div>
+          <div class="det-content__block-reviews"> <a href="#">Отзывы</a><a class="det-content__block-reviews-btn" href="#">
+              <p>Написать отзыв</p></a></div>
           <div class="det-content__block-review">
             <div class="det-content__block-review-items"> 
-              <div class="det-content__block-review-items-rating"> 
-                <p>4.0</p>
-                <div class="det-content__block-review-items-rating-star">
-                   <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.14827 1.15019L6.79408 5.72169L1.5269 6.45713C0.582342 6.58834 0.203797 7.70359 0.888783 8.34236L4.69947 11.8987L3.79817 16.9225C3.63594 17.8306 4.63458 18.5108 5.47098 18.0861L10.183 15.7141L14.8949 18.0861C15.7314 18.5074 16.73 17.8306 16.5678 16.9225L15.6665 11.8987L19.4771 8.34236C20.1621 7.70359 19.7836 6.58834 18.839 6.45713L13.5718 5.72169L11.2177 1.15019C10.7958 0.335332 9.57368 0.324974 9.14827 1.15019Z" fill="#FF7A00"/>
-</svg>
-<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.14827 1.15019L6.79408 5.72169L1.5269 6.45713C0.582342 6.58834 0.203797 7.70359 0.888783 8.34236L4.69947 11.8987L3.79817 16.9225C3.63594 17.8306 4.63458 18.5108 5.47098 18.0861L10.183 15.7141L14.8949 18.0861C15.7314 18.5074 16.73 17.8306 16.5678 16.9225L15.6665 11.8987L19.4771 8.34236C20.1621 7.70359 19.7836 6.58834 18.839 6.45713L13.5718 5.72169L11.2177 1.15019C10.7958 0.335332 9.57368 0.324974 9.14827 1.15019Z" fill="#FF7A00"/>
-</svg>
-<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.14827 1.15019L6.79408 5.72169L1.5269 6.45713C0.582342 6.58834 0.203797 7.70359 0.888783 8.34236L4.69947 11.8987L3.79817 16.9225C3.63594 17.8306 4.63458 18.5108 5.47098 18.0861L10.183 15.7141L14.8949 18.0861C15.7314 18.5074 16.73 17.8306 16.5678 16.9225L15.6665 11.8987L19.4771 8.34236C20.1621 7.70359 19.7836 6.58834 18.839 6.45713L13.5718 5.72169L11.2177 1.15019C10.7958 0.335332 9.57368 0.324974 9.14827 1.15019Z" fill="#FF7A00"/>
-</svg>
-<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.14827 1.15019L6.79408 5.72169L1.5269 6.45713C0.582342 6.58834 0.203797 7.70359 0.888783 8.34236L4.69947 11.8987L3.79817 16.9225C3.63594 17.8306 4.63458 18.5108 5.47098 18.0861L10.183 15.7141L14.8949 18.0861C15.7314 18.5074 16.73 17.8306 16.5678 16.9225L15.6665 11.8987L19.4771 8.34236C20.1621 7.70359 19.7836 6.58834 18.839 6.45713L13.5718 5.72169L11.2177 1.15019C10.7958 0.335332 9.57368 0.324974 9.14827 1.15019Z" fill="#FF7A00"/>
-</svg>
-<svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.83219 1.15019L7.37991 5.72169L1.89326 6.45713C0.909341 6.58834 0.515023 7.70359 1.22855 8.34236L5.19801 11.8987L4.25916 16.9225C4.09017 17.8306 5.13042 18.5108 6.00167 18.0861L10.91 15.7141L15.8183 18.0861C16.6896 18.5074 17.7298 17.8306 17.5608 16.9225L16.622 11.8987L20.5914 8.34236C21.305 7.70359 20.9106 6.58834 19.9267 6.45713L14.4401 5.72169L11.9878 1.15019C11.5484 0.335332 10.2753 0.324974 9.83219 1.15019Z" fill="#E7E7E7"/>
-</svg>
-                </div>
-              </div>
               <div class="det-content__block-review-items-info">
                 <div class="det-content__block-review-items-people"> 
                   <div class="det-content__block-review-items-photo"> </div>
@@ -267,26 +255,6 @@
               </div>
             </div>
             <div class="det-content__block-review-items"> 
-              <div class="det-content__block-review-items-rating"> 
-                <p>4.0</p>
-                <div class="det-content__block-review-items-rating-star">
-                   <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.14827 1.15019L6.79408 5.72169L1.5269 6.45713C0.582342 6.58834 0.203797 7.70359 0.888783 8.34236L4.69947 11.8987L3.79817 16.9225C3.63594 17.8306 4.63458 18.5108 5.47098 18.0861L10.183 15.7141L14.8949 18.0861C15.7314 18.5074 16.73 17.8306 16.5678 16.9225L15.6665 11.8987L19.4771 8.34236C20.1621 7.70359 19.7836 6.58834 18.839 6.45713L13.5718 5.72169L11.2177 1.15019C10.7958 0.335332 9.57368 0.324974 9.14827 1.15019Z" fill="#FF7A00"/>
-</svg>
-<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.14827 1.15019L6.79408 5.72169L1.5269 6.45713C0.582342 6.58834 0.203797 7.70359 0.888783 8.34236L4.69947 11.8987L3.79817 16.9225C3.63594 17.8306 4.63458 18.5108 5.47098 18.0861L10.183 15.7141L14.8949 18.0861C15.7314 18.5074 16.73 17.8306 16.5678 16.9225L15.6665 11.8987L19.4771 8.34236C20.1621 7.70359 19.7836 6.58834 18.839 6.45713L13.5718 5.72169L11.2177 1.15019C10.7958 0.335332 9.57368 0.324974 9.14827 1.15019Z" fill="#FF7A00"/>
-</svg>
-<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.14827 1.15019L6.79408 5.72169L1.5269 6.45713C0.582342 6.58834 0.203797 7.70359 0.888783 8.34236L4.69947 11.8987L3.79817 16.9225C3.63594 17.8306 4.63458 18.5108 5.47098 18.0861L10.183 15.7141L14.8949 18.0861C15.7314 18.5074 16.73 17.8306 16.5678 16.9225L15.6665 11.8987L19.4771 8.34236C20.1621 7.70359 19.7836 6.58834 18.839 6.45713L13.5718 5.72169L11.2177 1.15019C10.7958 0.335332 9.57368 0.324974 9.14827 1.15019Z" fill="#FF7A00"/>
-</svg>
-<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.14827 1.15019L6.79408 5.72169L1.5269 6.45713C0.582342 6.58834 0.203797 7.70359 0.888783 8.34236L4.69947 11.8987L3.79817 16.9225C3.63594 17.8306 4.63458 18.5108 5.47098 18.0861L10.183 15.7141L14.8949 18.0861C15.7314 18.5074 16.73 17.8306 16.5678 16.9225L15.6665 11.8987L19.4771 8.34236C20.1621 7.70359 19.7836 6.58834 18.839 6.45713L13.5718 5.72169L11.2177 1.15019C10.7958 0.335332 9.57368 0.324974 9.14827 1.15019Z" fill="#FF7A00"/>
-</svg>
-<svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.83219 1.15019L7.37991 5.72169L1.89326 6.45713C0.909341 6.58834 0.515023 7.70359 1.22855 8.34236L5.19801 11.8987L4.25916 16.9225C4.09017 17.8306 5.13042 18.5108 6.00167 18.0861L10.91 15.7141L15.8183 18.0861C16.6896 18.5074 17.7298 17.8306 17.5608 16.9225L16.622 11.8987L20.5914 8.34236C21.305 7.70359 20.9106 6.58834 19.9267 6.45713L14.4401 5.72169L11.9878 1.15019C11.5484 0.335332 10.2753 0.324974 9.83219 1.15019Z" fill="#E7E7E7"/>
-</svg>
-                </div>
-              </div>
               <div class="det-content__block-review-items-info">
                 <div class="det-content__block-review-items-people"> 
                   <div class="det-content__block-review-items-photo"> </div>
@@ -304,26 +272,6 @@
               </div>
             </div>
             <div class="det-content__block-review-items"> 
-              <div class="det-content__block-review-items-rating"> 
-                <p>4.0</p>
-                <div class="det-content__block-review-items-rating-star">
-                   <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.14827 1.15019L6.79408 5.72169L1.5269 6.45713C0.582342 6.58834 0.203797 7.70359 0.888783 8.34236L4.69947 11.8987L3.79817 16.9225C3.63594 17.8306 4.63458 18.5108 5.47098 18.0861L10.183 15.7141L14.8949 18.0861C15.7314 18.5074 16.73 17.8306 16.5678 16.9225L15.6665 11.8987L19.4771 8.34236C20.1621 7.70359 19.7836 6.58834 18.839 6.45713L13.5718 5.72169L11.2177 1.15019C10.7958 0.335332 9.57368 0.324974 9.14827 1.15019Z" fill="#FF7A00"/>
-</svg>
-<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.14827 1.15019L6.79408 5.72169L1.5269 6.45713C0.582342 6.58834 0.203797 7.70359 0.888783 8.34236L4.69947 11.8987L3.79817 16.9225C3.63594 17.8306 4.63458 18.5108 5.47098 18.0861L10.183 15.7141L14.8949 18.0861C15.7314 18.5074 16.73 17.8306 16.5678 16.9225L15.6665 11.8987L19.4771 8.34236C20.1621 7.70359 19.7836 6.58834 18.839 6.45713L13.5718 5.72169L11.2177 1.15019C10.7958 0.335332 9.57368 0.324974 9.14827 1.15019Z" fill="#FF7A00"/>
-</svg>
-<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.14827 1.15019L6.79408 5.72169L1.5269 6.45713C0.582342 6.58834 0.203797 7.70359 0.888783 8.34236L4.69947 11.8987L3.79817 16.9225C3.63594 17.8306 4.63458 18.5108 5.47098 18.0861L10.183 15.7141L14.8949 18.0861C15.7314 18.5074 16.73 17.8306 16.5678 16.9225L15.6665 11.8987L19.4771 8.34236C20.1621 7.70359 19.7836 6.58834 18.839 6.45713L13.5718 5.72169L11.2177 1.15019C10.7958 0.335332 9.57368 0.324974 9.14827 1.15019Z" fill="#FF7A00"/>
-</svg>
-<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.14827 1.15019L6.79408 5.72169L1.5269 6.45713C0.582342 6.58834 0.203797 7.70359 0.888783 8.34236L4.69947 11.8987L3.79817 16.9225C3.63594 17.8306 4.63458 18.5108 5.47098 18.0861L10.183 15.7141L14.8949 18.0861C15.7314 18.5074 16.73 17.8306 16.5678 16.9225L15.6665 11.8987L19.4771 8.34236C20.1621 7.70359 19.7836 6.58834 18.839 6.45713L13.5718 5.72169L11.2177 1.15019C10.7958 0.335332 9.57368 0.324974 9.14827 1.15019Z" fill="#FF7A00"/>
-</svg>
-<svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.83219 1.15019L7.37991 5.72169L1.89326 6.45713C0.909341 6.58834 0.515023 7.70359 1.22855 8.34236L5.19801 11.8987L4.25916 16.9225C4.09017 17.8306 5.13042 18.5108 6.00167 18.0861L10.91 15.7141L15.8183 18.0861C16.6896 18.5074 17.7298 17.8306 17.5608 16.9225L16.622 11.8987L20.5914 8.34236C21.305 7.70359 20.9106 6.58834 19.9267 6.45713L14.4401 5.72169L11.9878 1.15019C11.5484 0.335332 10.2753 0.324974 9.83219 1.15019Z" fill="#E7E7E7"/>
-</svg>
-                </div>
-              </div>
               <div class="det-content__block-review-items-info">
                 <div class="det-content__block-review-items-people"> 
                   <div class="det-content__block-review-items-photo"> </div>
@@ -340,9 +288,6 @@
                 </button>
               </div>
             </div>
-          </div>
-          <div class="det-content__block-btns"> 
-            <p>Еще рецензии</p>
           </div>
         </div>
         <div class="det-content__rec"> 
@@ -448,11 +393,30 @@
     <div class="shop__block">
       <div class="containers"> 
         <ul class="shop__block-list">
-          <li class="shop__block-list-item shop__block-list-item-active" id="indexShopButton-1"> История</li>
-          <li class="shop__block-list-item" id="indexShopButton-2">Искусство</li>
-          <li class="shop__block-list-item" id="indexShopButton-3">Журналы</li>
-          <li class="shop__block-list-item" id="indexShopButton-4">Религиоведение</li>
-          <li class="shop__block-list-item" id="indexShopButton-5">Возрождение и обновление</li>
+          <div class="swiper shopTabs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"> 
+                <li class="shop__block-list-item shop__block-list-item-active" id="indexShopButton-1"> История</li>
+              </div>
+              <div class="swiper-slide"> 
+                <li class="shop__block-list-item" id="indexShopButton-2">Искусство</li>
+              </div>
+              <div class="swiper-slide"> 
+                <li class="shop__block-list-item" id="indexShopButton-3">Журналы</li>
+              </div>
+              <div class="swiper-slide"> 
+                <li class="shop__block-list-item" id="indexShopButton-4">Религиоведение</li>
+              </div>
+              <div class="swiper-slide">  
+                <li class="shop__block-list-item" id="indexShopButton-5">Возрождение и обновление</li>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-controls"> 
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
         </ul>
         <div class="shop__block-slider" id="indexShopElement-1">
           <div class="swiper shopSlider-1">
@@ -1334,6 +1298,7 @@
         <div class="swiper-button-prev">
           <div class="swiper-button-prev-arrow"></div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
   </section>

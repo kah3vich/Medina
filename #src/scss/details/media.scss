@@ -1,0 +1,46 @@
+@media (max-width: 1300px) {
+    .detls-catalog__block-table {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 1050px) {
+    .detls-header .containers {
+        padding: 0 30px;
+    }
+    .detls-catalog .containers {
+        padding: 0 30px;
+    }
+}
+@media (max-width: 950px) {
+    .detls-header__block-title {
+        width: 100%;
+    }
+    .detls-header__block-wrapper {
+        width: 100%;
+    }
+}
+@media (max-width: 800px) {
+    .detls-catalog__block-table {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .detls-header__block-photo-items {
+        width: 100%;
+        height: 100px;
+    }
+    .detls-header__block-photo {
+        gap: 10px;
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width: 600px) {
+    .detls-header__block-add {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .detls-header__block-adds {
+        margin: 35px 0 0 0;
+    }
+}

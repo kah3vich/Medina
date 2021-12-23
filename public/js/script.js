@@ -10,6 +10,16 @@ var recSlider = new Swiper(".recSlider", {
     slidesPerView: 3,
     spaceBetween: 0,
     loop: true,
+    breakpoints: {
+        1300: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 0
+        },
+        0: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 0
+        }
+    }
 });
 var videoSlider = new Swiper(".videoSlider", {
     navigation: {
@@ -23,6 +33,16 @@ var videoSlider = new Swiper(".videoSlider", {
     slidesPerView: 3,
     spaceBetween: 0,
     loop: true,
+    breakpoints: {
+        1300: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 0
+        },
+        0: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 0
+        }
+    }
 });
 var authorsSlider = new Swiper(".authorsSlider", {
     navigation: {
@@ -35,6 +55,24 @@ var authorsSlider = new Swiper(".authorsSlider", {
     mousewheel: true,
     slidesPerView: 5,
     spaceBetween: 0,
+    breakpoints: {
+        1200: {
+            slidesPerView: 5,
+            spaceBetweenSlides: 0
+        },
+        900: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 0
+        },
+        700: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 0
+        },
+        0: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 0
+        }
+    }
 });
 var partSlider = new Swiper(".partSlider", {
     navigation: {
@@ -314,6 +352,24 @@ var shopSlider_1 = new Swiper(".shopSlider-1", {
     keyboard: true,
     slidesPerView: 5,
     spaceBetween: 40,
+    breakpoints: {
+        1200: {
+            slidesPerView: 5,
+            spaceBetweenSlides: 40
+        },
+        950: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 0
+        },
+        650: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 0
+        },
+        0: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 0
+        }
+    }
 });
 var shopSlider_2 = new Swiper(".shopSlider-2", {
     navigation: {
@@ -369,6 +425,32 @@ var shopSlider_5 = new Swiper(".shopSlider-5", {
     keyboard: true,
     slidesPerView: 5,
     spaceBetween: 40,
+});
+
+
+var shopTabs = new Swiper(".shopTabs", {
+    navigation: {
+        nextEl: ".shop__block-list .swiper-controls .swiper-button-next",
+        prevEl: ".shop__block-list .swiper-controls .swiper-button-prev",
+    },
+    pagination: {
+        el: ".shop__block-list .swiper-controls .swiper-pagination",
+    },
+    mousewheel: true,
+    breakpoints: {
+        1400: {
+            slidesPerView: 5,
+            spaceBetweenSlides: 0
+        },
+        650: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 0
+        },
+        0: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 0
+        }
+    }
 });
 $('.catalog-content__block-filter-titles').on('click', () => {
     $('.catalog-content__block-filter-titles svg').toggleClass('rotate-180');
@@ -497,6 +579,15 @@ function changeSlideCatalog(id) {
         $('#catalogCatalogBlock-1').addClass('display-n')
     }
 }
+
+
+
+$('#headerGalleryMenu').hover(() => {
+    $('.header__block-list-item-add').toggleClass('display-n')
+});
+$('.header__block-list-item-add').hover(() => {
+    $('.header__block-list-item-add').removeClass('display-n')
+});
 $(() => {
     for ( let i = 1; i <= 5; i++ ) {
         $(`#detailLines-${i}`).css('width', `${$(`#detailLineSum-${i}`).html()}`)

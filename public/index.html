@@ -28,7 +28,9 @@
         <div class="header__block-logo"> </div><a class="header__block-logos" href="index.html"><img src="./img/index/logo.png" alt="img"></a><a class="header__block-lg" href="index.html"><img src="./img/index/logos.png" alt="img"></a>
         <ul class="header__block-list">
           <li class="header__block-list-item"><a href="catalog.html">Книги </a></li>
-          <li class="header__block-list-item"> <a href="#">Проекты </a></li>
+          <li class="header__block-list-item" id="headerGalleryMenu"><a href="#">Проекты </a>
+            <div class="header__block-list-item-add display-n"> <a href="gallery.html">Фотоархив</a></div>
+          </li>
           <li class="header__block-list-item"> <a href="info.html">Об издательстве </a></li>
           <li class="header__block-list-item"> <a href="new.html">Новости </a></li>
           <li class="header__block-list-item"> <a href="contact.html">Контакты </a></li>
@@ -89,7 +91,9 @@
                   <div class="ind-header__content-item-text-title">Первая на Южном Кавказе презентация ИД «Медина» прошла в Баку</div>
                   <button class="ind-header__content-item-text-btn">Подробнее</button>
                 </div>
-                <div class="ind-header__content-item-img"> <img src="./img/index/header-1.png" alt="img"></div>
+                <div class="ind-header__content-item-img"> <img src="./img/index/header-1.png" alt="img">
+                  <button class="ind-header__content-item-img-btns">Подробнее</button>
+                </div>
               </div>
             </div>
             <div class="swiper-slide"> 
@@ -98,7 +102,9 @@
                   <div class="ind-header__content-item-text-title">Первая на Южном Кавказе презентация ИД «Медина» прошла в Баку</div>
                   <button class="ind-header__content-item-text-btn">Подробнее</button>
                 </div>
-                <div class="ind-header__content-item-img"> <img src="./img/index/header-1.png" alt="img"></div>
+                <div class="ind-header__content-item-img"> <img src="./img/index/header-1.png" alt="img">
+                  <button class="ind-header__content-item-img-btns">Подробнее</button>
+                </div>
               </div>
             </div>
             <div class="swiper-slide"> 
@@ -107,7 +113,9 @@
                   <div class="ind-header__content-item-text-title">Первая на Южном Кавказе презентация ИД «Медина» прошла в Баку</div>
                   <button class="ind-header__content-item-text-btn">Подробнее</button>
                 </div>
-                <div class="ind-header__content-item-img"> <img src="./img/index/header-1.png" alt="img"></div>
+                <div class="ind-header__content-item-img"> <img src="./img/index/header-1.png" alt="img">
+                  <button class="ind-header__content-item-img-btns">Подробнее</button>
+                </div>
               </div>
             </div>
           </div>
@@ -536,11 +544,30 @@
     <div class="shop__block">
       <div class="containers"> 
         <ul class="shop__block-list">
-          <li class="shop__block-list-item shop__block-list-item-active" id="indexShopButton-1"> История</li>
-          <li class="shop__block-list-item" id="indexShopButton-2">Искусство</li>
-          <li class="shop__block-list-item" id="indexShopButton-3">Журналы</li>
-          <li class="shop__block-list-item" id="indexShopButton-4">Религиоведение</li>
-          <li class="shop__block-list-item" id="indexShopButton-5">Возрождение и обновление</li>
+          <div class="swiper shopTabs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"> 
+                <li class="shop__block-list-item shop__block-list-item-active" id="indexShopButton-1"> История</li>
+              </div>
+              <div class="swiper-slide"> 
+                <li class="shop__block-list-item" id="indexShopButton-2">Искусство</li>
+              </div>
+              <div class="swiper-slide"> 
+                <li class="shop__block-list-item" id="indexShopButton-3">Журналы</li>
+              </div>
+              <div class="swiper-slide"> 
+                <li class="shop__block-list-item" id="indexShopButton-4">Религиоведение</li>
+              </div>
+              <div class="swiper-slide">  
+                <li class="shop__block-list-item" id="indexShopButton-5">Возрождение и обновление</li>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-controls"> 
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
         </ul>
         <div class="shop__block-slider" id="indexShopElement-1">
           <div class="swiper shopSlider-1">
@@ -1422,6 +1449,7 @@
         <div class="swiper-button-prev">
           <div class="swiper-button-prev-arrow"></div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
   </section>
@@ -1454,6 +1482,7 @@
         <div class="swiper-button-prev">
           <div class="swiper-button-prev-arrow"></div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
   </section>

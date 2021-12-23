@@ -125,3 +125,12 @@ function changeSlideCatalog(id) {
         $('#catalogCatalogBlock-1').addClass('display-n')
     }
 }
+
+
+
+$('#headerGalleryMenu').hover(() => {
+    $('.header__block-list-item-add').toggleClass('display-n')
+});
+$('.header__block-list-item-add').hover(() => {
+    $('.header__block-list-item-add').removeClass('display-n')
+});

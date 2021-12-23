@@ -3,11 +3,22 @@ section.shop
         .shop__block
             .containers 
                 ul.shop__block-list
-                    li#indexShopButton-1.shop__block-list-item.shop__block-list-item-active  История
-                    li#indexShopButton-2.shop__block-list-item Искусство
-                    li#indexShopButton-3.shop__block-list-item Журналы
-                    li#indexShopButton-4.shop__block-list-item Религиоведение
-                    li#indexShopButton-5.shop__block-list-item Возрождение и обновление
+                    .swiper.shopTabs
+                        .swiper-wrapper
+                            .swiper-slide 
+                                li#indexShopButton-1.shop__block-list-item.shop__block-list-item-active  История
+                            .swiper-slide 
+                                li#indexShopButton-2.shop__block-list-item Искусство
+                            .swiper-slide 
+                                li#indexShopButton-3.shop__block-list-item Журналы
+                            .swiper-slide 
+                                li#indexShopButton-4.shop__block-list-item Религиоведение
+                            .swiper-slide   
+                                li#indexShopButton-5.shop__block-list-item Возрождение и обновление
+                    .swiper-controls 
+                        .swiper-button-next
+                        .swiper-button-prev
+                        .swiper-pagination
                 .shop__block-slider#indexShopElement-1
                     .swiper.shopSlider-1
                         .swiper-wrapper
