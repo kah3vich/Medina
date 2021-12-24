@@ -1,0 +1,91 @@
+@media (max-width: 1200px) {
+    .basket-content__block-name {
+        display: none;
+    }
+    .basket-content__block-items {
+        width: 100%;
+        padding: 13px 130px 13px 15px;
+    }
+}
+@media (max-width: 1050px) {
+    .basket-content .containers {
+        padding: 0 30px;
+    }
+    .basket-content__block-items-count {
+        margin: 0;
+    }
+}
+@media (max-width: 1000px) {
+    .basket-content__block-price {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "basketPrice-1 basketPrice-2"
+        "basketPrice-3 basketPrice-3";
+        justify-items: center;
+    }
+    .basket-content__block-price-title {
+        grid-area: basketPrice-1;
+    }
+    .basket-content__block-price-sum {
+        grid-area: basketPrice-2;
+    }
+    .basket-content__block-price-btn {
+        grid-area: basketPrice-3;
+    }
+}
+@media (max-width: 900px) {
+    .basket-content__block-items {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .basket-content__block-items {
+        width: 100%;
+        padding: 20px 0 35px 0;
+        border: none;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "basketItems-1"
+        "basketItems-2"
+        "basketItems-3";
+    }
+    .basket-content__block-items-count {
+        margin: 35px 0 0 0;
+        width: max-content;
+    }
+    .basket-content__block-items-info {
+        grid-area: basketItems-1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .basket-content__block-items-price {
+        grid-area: basketItems-2;
+    }
+    .basket-content__block-items-count {
+        grid-area: basketItems-3;
+    }
+    .basket-content__block-items-text {
+        margin: 35px 0 0 0;
+    }
+    .basket-content__block-items-icons {
+        bottom: 55px;
+        top: auto;
+        transform: none;
+        left: auto;
+        right: 35px;
+    }
+}
+@media (max-width: 600px) {
+    .basket-content__block-price {
+        padding: 0 15px;
+        overflow: hidden;
+    }
+    .basket-content__block-price-btn {
+        padding: 0 20px; 
+        width: 80%;
+        z-index: 5;
+    }
+}

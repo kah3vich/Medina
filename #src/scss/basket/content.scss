@@ -60,7 +60,6 @@
         &-items {
             width: 100%;
             padding: 13px 237px 13px 15px;
-            height: 218px;
             background: #FFFFFF;
             border: 1px solid #D0D0D0;
             box-sizing: border-box;
@@ -203,6 +202,7 @@
                 justify-content: center;
                 text-align: center;
                 cursor: pointer;
+                z-index: 6;
                 & p {
                     font-style: normal;
                     font-weight: 500;
