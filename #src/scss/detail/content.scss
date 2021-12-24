@@ -28,22 +28,76 @@
             &:nth-child(1) {
                 grid-area: detailHeader-1;
                 border-radius: 20px;
+                width: 320px;
+                height: 460px;
+                overflow: hidden;
+                & img {
+                    width: 232px;
+                    height: 339px;
+                    object-fit: cover;
+                    overflow: hidden;
+                }
             }
             &:nth-child(2) {
                 grid-area: detailHeader-2;
                 border-radius: 20px;
+                width: 320px;
+                height: 460px;
+                overflow: hidden;
+                & img {
+                    width: 232px;
+                    height: 339px;
+                    object-fit: cover;
+                    overflow: hidden;
+                }
             }
             &:nth-child(3) {
                 grid-area: detailHeader-3;
+                height: 100px;
+                width: 100px;
+                overflow: hidden;
+                & img {
+                    width: 90%;
+                    height: 90%;
+                    object-fit: cover;
+                    overflow: hidden;
+                }
             }
             &:nth-child(4) {
                 grid-area: detailHeader-4;
+                height: 100px;
+                width: 100px;
+                overflow: hidden;
+                & img {
+                    width: 90%;
+                    height: 90%;
+                    object-fit: cover;
+                    overflow: hidden;
+                }
             }
             &:nth-child(5) {
                 grid-area: detailHeader-5;
+                height: 100px;
+                width: 100px;
+                overflow: hidden;
+                & img {
+                    width: 90%;
+                    height: 90%;
+                    object-fit: cover;
+                    overflow: hidden;
+                }
             }
             &:nth-child(6) {
                 grid-area: detailHeader-6;
+                height: 100px;
+                width: 100px;
+                overflow: hidden;
+                & img {
+                    width: 90%;
+                    height: 90%;
+                    object-fit: cover;
+                    overflow: hidden;
+                }
             }
         }
     }
@@ -346,6 +400,7 @@
                     width: 102px;
                     height: 149px;
                     overflow: hidden;
+                    object-fit: cover;
                 }
             }
             &-star {

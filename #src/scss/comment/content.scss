@@ -208,6 +208,13 @@
                 justify-content: center;
                 background: #F2F2F2;
                 border-radius: 20px;
+                overflow: hidden;
+                & img {
+                    width: 232px;
+                    height: 339px;
+                    object-fit: cover;
+                    overflow: hidden;
+                }
             }
             &-price {
                 margin: 43px 0 0 0;

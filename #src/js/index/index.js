@@ -383,6 +383,24 @@ var shopSlider_2 = new Swiper(".shopSlider-2", {
     keyboard: true,
     slidesPerView: 5,
     spaceBetween: 40,
+    breakpoints: {
+        1200: {
+            slidesPerView: 5,
+            spaceBetweenSlides: 40
+        },
+        950: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 0
+        },
+        650: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 0
+        },
+        0: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 0
+        }
+    }
 });
 
 var shopSlider_3 = new Swiper(".shopSlider-3", {
@@ -397,6 +415,24 @@ var shopSlider_3 = new Swiper(".shopSlider-3", {
     keyboard: true,
     slidesPerView: 5,
     spaceBetween: 40,
+    breakpoints: {
+        1200: {
+            slidesPerView: 5,
+            spaceBetweenSlides: 40
+        },
+        950: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 0
+        },
+        650: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 0
+        },
+        0: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 0
+        }
+    }
 });
 
 var shopSlider_4 = new Swiper(".shopSlider-4", {
@@ -411,6 +447,24 @@ var shopSlider_4 = new Swiper(".shopSlider-4", {
     keyboard: true,
     slidesPerView: 5,
     spaceBetween: 40,
+    breakpoints: {
+        1200: {
+            slidesPerView: 5,
+            spaceBetweenSlides: 40
+        },
+        950: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 0
+        },
+        650: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 0
+        },
+        0: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 0
+        }
+    }
 });
 
 var shopSlider_5 = new Swiper(".shopSlider-5", {
@@ -425,6 +479,24 @@ var shopSlider_5 = new Swiper(".shopSlider-5", {
     keyboard: true,
     slidesPerView: 5,
     spaceBetween: 40,
+    breakpoints: {
+        1200: {
+            slidesPerView: 5,
+            spaceBetweenSlides: 40
+        },
+        950: {
+            slidesPerView: 4,
+            spaceBetweenSlides: 0
+        },
+        650: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 0
+        },
+        0: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 0
+        }
+    }
 });
 
 

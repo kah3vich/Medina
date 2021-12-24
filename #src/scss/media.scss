@@ -336,4 +336,18 @@
     .catalog-content {
         padding: 55px 0 90px 0;
     }
+    .shop__block-slider-img {
+        width: 100%;
+        height: 186px;
+        & img {
+            width: 80%;
+            height: 130px;
+        }
+    }
+    .rec__slider-item-content {
+        width: 245px;
+    }
+    .rec__slider .swiper-button-next, .rec__slider .swiper-button-prev {
+        top: 92%;
+    }
 }
