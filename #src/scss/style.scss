@@ -1335,3 +1335,99 @@ p {
         }
     }
 }
+
+
+
+
+.shop-select-item {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 0 0 63px;
+    position: relative;
+    cursor: pointer;
+    background: #FFFFFF;
+    border-radius: 30.5px;
+    &::after {
+        content: url(../svg/shop/arrow-down.svg);
+        transition: all 0.5s ease;
+        position: absolute;
+        top: 50%;
+        right: 35px;
+        transform: translate(0%, -50%);
+        height: 25px;
+    }
+    &-active {
+        &::after {
+            transition: all 0.5s ease;
+            transform: translate(0%, -50%) rotate(180deg);
+        }
+    }
+}
+.shop-select-placeholder {
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 42px;
+    color: #747474;
+}
+.shop-select-block {
+    position: absolute;
+    bottom: -480px;
+    left: 0;
+    width: 100%;
+    height: 460px;
+    background: #FFFFFF;
+    border-radius: 30.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 11;
+}
+.shop-select-wrapper {
+    width: 99%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: auto;
+    overflow-x: hidden;
+    z-index: 11;
+    padding: 25px 65px 25px 65px;
+}
+.shop-select-wrapper::-webkit-scrollbar {
+    width: 27px;
+    position: absolute;
+    left: -20px;
+}
+.shop-select-wrapper::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 10px 10px #FFF0CD;
+            box-shadow: inset 0 0 10px 10px #FFF0CD;
+    border: solid 12px transparent;
+    border-radius: 50px;
+}
+.shop-select-wrapper::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 10px 10px #D65E54;
+            box-shadow: inset 0 0 10px 10px #D65E54;
+    border: solid 10px transparent;
+    border-radius: 50px;
+}
+.shop-select-element {
+    width: 100%;
+    background: transparent;
+    border: none;
+    margin: 0 0 5px 0;
+    text-align: left;
+    cursor: pointer;
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 42px;
+    color: #747474;
+}

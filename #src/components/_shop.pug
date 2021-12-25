@@ -2,23 +2,19 @@ section.shop
         .shop__title Рубрики
         .shop__block
             .containers 
-                ul.shop__block-list
-                    .swiper.shopTabs
-                        .swiper-wrapper
-                            .swiper-slide 
-                                li#indexShopButton-1.shop__block-list-item.shop__block-list-item-active  История
-                            .swiper-slide 
-                                li#indexShopButton-2.shop__block-list-item Искусство
-                            .swiper-slide 
-                                li#indexShopButton-3.shop__block-list-item Журналы
-                            .swiper-slide 
-                                li#indexShopButton-4.shop__block-list-item Религиоведение
-                            .swiper-slide   
-                                li#indexShopButton-5.shop__block-list-item Возрождение и обновление
-                    .swiper-controls 
-                        .swiper-button-next
-                        .swiper-button-prev
-                        .swiper-pagination
+                select.shop__block-list#shopList
+                    option(value="Исламские источники и науки") Исламские источники и науки
+                    option(value="Искусство") Искусство
+                    option(value="Востоковедение, исламоведение") Востоковедение, исламоведение
+                    option(value="Политология, международные отношения") Политология, международные отношения
+                    option(value="Возрождение и обновление") Возрождение и обновление
+                    option(value="Межрелигиозный диалог") Межрелигиозный диалог
+                    option(value="Искусство и культура ислама") Искусство и культура ислама
+                    option(value="Художественная литература") Художественная литература
+                    option(value="Учебные пособия") Учебные пособия
+                    option(value="Периодические издания") Периодические издания
+                    option(value="Справочные материалы") Справочные материалы
+                    option(value="Материалы конференций") Материалы конференций
                 .shop__block-slider#indexShopElement-1
                     .swiper.shopSlider-1
                         .swiper-wrapper
@@ -634,4 +630,14 @@ section.shop
                         .swiper-button-prev
                             .swiper-button-prev-arrow
                         .swiper-pagination
-                
+
+
+
+
+
+
+
+
+
+
+

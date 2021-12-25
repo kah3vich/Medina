@@ -123,67 +123,6 @@ var indexHeaderSlider = new Swiper(".indexHeaderSlider", {
 });
 
 
-$('#indexShopButton-1').on('click', function() {
-    $(this).addClass('shop__block-list-item-active')
-    $('#indexShopButton-2').removeClass('shop__block-list-item-active')
-    $('#indexShopButton-3').removeClass('shop__block-list-item-active')
-    $('#indexShopButton-4').removeClass('shop__block-list-item-active')
-    $('#indexShopButton-5').removeClass('shop__block-list-item-active')
-    $('#indexShopElement-1').removeClass('display-n')
-    $('#indexShopElement-2').addClass('display-n')
-    $('#indexShopElement-3').addClass('display-n')
-    $('#indexShopElement-4').addClass('display-n')
-    $('#indexShopElement-5').addClass('display-n')
-});
-$('#indexShopButton-2').on('click', function() {
-    $(this).addClass('shop__block-list-item-active')
-    $('#indexShopButton-1').removeClass('shop__block-list-item-active')
-    $('#indexShopButton-3').removeClass('shop__block-list-item-active')
-    $('#indexShopButton-4').removeClass('shop__block-list-item-active')
-    $('#indexShopButton-5').removeClass('shop__block-list-item-active')
-    $('#indexShopElement-2').removeClass('display-n')
-    $('#indexShopElement-1').addClass('display-n')
-    $('#indexShopElement-3').addClass('display-n')
-    $('#indexShopElement-4').addClass('display-n')
-    $('#indexShopElement-5').addClass('display-n')
-});
-$('#indexShopButton-3').on('click', function() {
-    $(this).addClass('shop__block-list-item-active')
-    $('#indexShopButton-2').removeClass('shop__block-list-item-active')
-    $('#indexShopButton-1').removeClass('shop__block-list-item-active')
-    $('#indexShopButton-4').removeClass('shop__block-list-item-active')
-    $('#indexShopButton-5').removeClass('shop__block-list-item-active')
-    $('#indexShopElement-3').removeClass('display-n')
-    $('#indexShopElement-2').addClass('display-n')
-    $('#indexShopElement-1').addClass('display-n')
-    $('#indexShopElement-4').addClass('display-n')
-    $('#indexShopElement-5').addClass('display-n')
-});
-$('#indexShopButton-4').on('click', function() {
-    $(this).addClass('shop__block-list-item-active')
-    $('#indexShopButton-2').removeClass('shop__block-list-item-active')
-    $('#indexShopButton-3').removeClass('shop__block-list-item-active')
-    $('#indexShopButton-1').removeClass('shop__block-list-item-active')
-    $('#indexShopButton-5').removeClass('shop__block-list-item-active')
-    $('#indexShopElement-4').removeClass('display-n')
-    $('#indexShopElement-2').addClass('display-n')
-    $('#indexShopElement-3').addClass('display-n')
-    $('#indexShopElement-1').addClass('display-n')
-    $('#indexShopElement-5').addClass('display-n')
-});
-$('#indexShopButton-5').on('click', function() {
-    $(this).addClass('shop__block-list-item-active')
-    $('#indexShopButton-2').removeClass('shop__block-list-item-active')
-    $('#indexShopButton-3').removeClass('shop__block-list-item-active')
-    $('#indexShopButton-4').removeClass('shop__block-list-item-active')
-    $('#indexShopButton-1').removeClass('shop__block-list-item-active')
-    $('#indexShopElement-5').removeClass('display-n')
-    $('#indexShopElement-2').addClass('display-n')
-    $('#indexShopElement-3').addClass('display-n')
-    $('#indexShopElement-4').addClass('display-n')
-    $('#indexShopElement-1').addClass('display-n')
-});
-
 
 
 let activeContentIndex = 0
@@ -524,6 +463,43 @@ var shopTabs = new Swiper(".shopTabs", {
         }
     }
 });
+
+
+
+$(function() {
+    $('#shopList').css('display', 'none')
+    $('#shopList').after(`<div class="shop-select-item"><div class="shop-select-placeholder">${$('#shopList').children('option').eq(0).val()}</div><div class="shop-select-block display-n"><div id="listConstructorElementshopList" class="shop-select-wrapper"></div></div></div></div>`)
+    let count = $('#shopList').children('option').length
+    for( let i = 0; i < count; i++) {
+        let arrows = $('#shopList').children('option').eq(i).val()
+        let newElementBlock = document.createElement("button");
+        newElementBlock.classList.add("shop-select-element")
+        newElementBlock.id = `shop-select-element-${i + 1}`;
+        newElementBlock.innerHTML = `${arrows}`
+        document.getElementById("listConstructorElementshopList").appendChild(newElementBlock);
+        $(`#shop-select-element-${i + 1}`).attr('value', `${arrows}`)
+        $(`#shop-select-element-${i + 1}`).attr('type', `button`)
+    }
+    $('#shop-select-element-0').css('display', 'none')
+    $('.shop-select-item').on('click', function() {
+        $('.shop-select-block').toggleClass('display-n')
+        $('.shop-select-item').toggleClass('shop-select-item-active')
+    })
+    $(".shop-select-element").on('click', function() {
+        let idElement = this.id
+        let valueElement = $(`#${idElement}`).val()
+        $('.shop-select-placeholder').html(valueElement)
+        $('#shopList option:nth-child(1)').val(valueElement)
+        $('#shopList option:nth-child(1)').html(valueElement)
+        let counts = $('.shop__block .containers ').children('.shop__block-slider').length
+        for (let i = 1; i <= counts; i++ ) {
+            $(`#indexShopElement-${i}`).addClass('display-n')
+        }
+        var last = idElement.toString().slice(-1);
+        $(`#indexShopElement-${last}`).removeClass('display-n')
+    })
+})
+
 $('.catalog-content__block-filter-titles').on('click', () => {
     $('.catalog-content__block-filter-titles svg').toggleClass('rotate-180');
 });
