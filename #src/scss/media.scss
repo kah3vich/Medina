@@ -326,6 +326,25 @@
         padding: 0;
     }
 }
+@media (max-width: 500px) {
+    .shop-select-placeholder {
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 42px;
+        color: #747474;
+    }
+    .shop-select-item {
+        padding: 0 0 0 30px;
+    }
+    .shop-select-wrapper {
+        padding: 25px 30px 25px 30px;
+    }
+    .shop-select-element {
+        font-size: 18px;
+    }
+}
 @media (max-width: 450px) {
     .shop__block-slider .swiper-button-next, .shop__block-slider .swiper-button-prev {
         top: 91%;
