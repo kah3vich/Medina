@@ -6530,6 +6530,7 @@
 
 .det-header__block-text {
   margin: 21px 0 0 0;
+  min-height: 270px;
 }
 
 .det-header__block-text p {
