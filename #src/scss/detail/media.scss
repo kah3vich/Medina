@@ -14,6 +14,9 @@
     .det-header__block {
         margin: 55px 0 0 0;
     }
+    .det-header__block-info-count {
+        display: none;
+    }
 }
 @media (max-width: 1050px) {
     .det-header .containers {

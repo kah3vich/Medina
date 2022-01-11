@@ -6445,10 +6445,11 @@
 }
 
 .det-header__block-info-count {
-  margin: 0 0 0 16px;
-  padding: 0 19px;
-  height: 37px;
-  border: 2px solid #d65e54;
+  position: absolute;
+  bottom: calc(100% + 50px);
+  left: 155%;
+  width: 100%;
+  padding: 12px 80px;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6459,12 +6460,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border: 2px solid #d65e54;
 }
 
 .det-header__block-info-count p {
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 24px;
   color: #4d4d4d;
 }
@@ -10252,6 +10254,10 @@ h6 {
 
   .det-header__block {
     margin: 55px 0 0 0;
+  }
+
+  .det-header__block-info-count {
+    display: none;
   }
 
   .shop__block-list .swiper-slide {
