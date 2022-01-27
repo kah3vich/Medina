@@ -1,0 +1,44 @@
+@media (max-width: 1150px) {
+	.error__banner {
+		display: none;
+	}
+	.error .containers {
+		justify-content: center;
+	}
+}
+@media (max-width: 600px) {
+	.error__text {
+		width: 380px;
+	}
+	.error__text-add {
+		font-family: Spectral;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 30px;
+		color: #2e2e2e;
+	}
+	.error__text-title {
+		margin: 80px 0 100px 0;
+		font-family: Spectral;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 130px;
+		line-height: 20px;
+		color: #2e2e2e;
+	}
+	.error__text-text {
+		font-family: TT Norms;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 28px;
+		color: #000;
+	}
+	.error__text-btn {
+		margin: 45px 0 0 0;
+	}
+	.error .containers {
+		padding: 0 30px;
+	}
+}

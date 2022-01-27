@@ -1,0 +1,20 @@
+@@include('components/_head.pug', {
+    'title': 'Главная'
+})
+
+    @@include('components/_header.pug')
+
+    section.error 
+        .containers 
+            .error__text 
+                .error__text-add ОШИБКА
+                .error__text-title 404
+                .error__text-text Кажется что-то пошло не так! Страница, которую вы запрашиваете, не существует. Возможно она устарела, была удалена, или был введен неверный адрес в адресной строке.
+                a(href="#").error__text-btn Перейти на главную
+            .error__banner 
+                img(src="./img/404/error.png" alt="banner")
+
+
+@@include('components/_footer.pug')
+
+@@include('components/_script.pug')
