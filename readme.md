@@ -1,6 +1,10 @@
-# Index: [click me](https://kah3vich.github.io/Medina/public/index.html)
+# Project Medina
 
-<br>
+### by kah3vich x bpump
+
+<hr />
+
+# Index: [click me](https://kah3vich.github.io/Medina/public/index.html)
 
 # New: [click me](https://kah3vich.github.io/Medina/public/new.html)
 
