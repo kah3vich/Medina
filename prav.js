@@ -2138,3 +2138,13 @@ $(() => {
 		$('.header__block-list-item-add').removeClass('display-n')
 	}
 })
+
+$(() => {
+	setInterval(() => {
+		if ($('.shop__block-slider .swiper-slide').length <= 5) {
+			$('.shop__block-slider .swiper-controls').css('opacity', '0')
+		} else {
+			$('.shop__block-slider .swiper-controls').css('opacity', '1')
+		}
+	}, 500)
+})
