@@ -2141,9 +2141,14 @@ $(() => {
 
 $(() => {
 	setInterval(() => {
-		if ($('.shop__block-slider .swiper-slide').length <= 5) {
-			$('.shop__block-slider .swiper-controls').css('opacity', '0')
-		} else {
+		if (window.innerWidth > 1200) {
+			if ($('.shop__block-slider .swiper-slide').length <= 5) {
+				$('.shop__block-slider .swiper-controls').css('opacity', '0')
+			} else {
+				$('.shop__block-slider .swiper-controls').css('opacity', '1')
+			}
+		}
+		if (window.innerWidth <= 1200) {
 			$('.shop__block-slider .swiper-controls').css('opacity', '1')
 		}
 	}, 500)
