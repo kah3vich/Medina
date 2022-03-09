@@ -2149,7 +2149,25 @@ $(() => {
 			}
 		}
 		if (window.innerWidth <= 1200) {
-			$('.shop__block-slider .swiper-controls').css('opacity', '1')
+			if ($('.shop__block-slider .swiper-slide').length <= 4) {
+				$('.shop__block-slider .swiper-controls').css('opacity', '0')
+			} else {
+				$('.shop__block-slider .swiper-controls').css('opacity', '1')
+			}
+		}
+		if (window.innerWidth <= 950) {
+			if ($('.shop__block-slider .swiper-slide').length <= 3) {
+				$('.shop__block-slider .swiper-controls').css('opacity', '0')
+			} else {
+				$('.shop__block-slider .swiper-controls').css('opacity', '1')
+			}
+		}
+		if (window.innerWidth <= 650) {
+			if ($('.shop__block-slider .swiper-slide').length <= 2) {
+				$('.shop__block-slider .swiper-controls').css('opacity', '0')
+			} else {
+				$('.shop__block-slider .swiper-controls').css('opacity', '1')
+			}
 		}
 	}, 500)
 })
