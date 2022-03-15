@@ -1101,3 +1101,12 @@
 .catalog-content__block-list-items {
 	justify-content: space-between;
 }
+
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+	opacity: 0.3 !important;
+	cursor: not-allowed !important;
+}
+.header-select-item::after {
+    height: 6px;
+}
