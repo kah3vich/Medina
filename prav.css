@@ -1110,3 +1110,11 @@
 .header-select-item::after {
     height: 6px;
 }
+
+
+.shop__block-slider .swiper-button-next,
+.shop__block-slider .swiper-button-prev {
+	bottom: 45px;
+    top: auto;
+    z-index: 12;
+}
