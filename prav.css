@@ -1118,7 +1118,7 @@
 	z-index: 12;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 900px) {
 	.rec__slider {
 		height: unset;
 		position: relative;
